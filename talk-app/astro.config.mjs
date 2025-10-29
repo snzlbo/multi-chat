@@ -16,7 +16,6 @@ export default defineConfig({
         enabled: false,
     },
     site: 'https://multi-chat-talk-app-git-main-snzlbos-projects.vercel.app/',
-    adapter: vercel(),
     env: {
         schema: {
             ENV: envField.string({
