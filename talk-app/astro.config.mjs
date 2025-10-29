@@ -17,10 +17,6 @@ export default defineConfig({
     },
     site: 'https://multi-chat-talk-app-git-main-snzlbos-projects.vercel.app/',
     adapter: vercel(),
-    build: {
-        assetsPrefix:
-            'https://esq365.sharepoint.com/sites/dd-AIQQQ-TALK-dev/Style%20Library',
-    },
     env: {
         schema: {
             ENV: envField.string({
