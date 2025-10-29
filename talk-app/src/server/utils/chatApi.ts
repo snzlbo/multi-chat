@@ -33,8 +33,8 @@ export const answer = async (
     // Set the system prompt language based on the provided language parameter
     const systemPrompt =
         language === 'en'
-            ? 'IMPORTANT: 英語でのみ回答してください。' + prompt
-            : 'IMPORTANT: 日本語でのみ回答してください。' + prompt
+            ? 'IMPORTANT: Please respond only in English. ' + prompt
+            : 'IMPORTANT: Veuillez répondre uniquement en français. ' + prompt
 
     // Retrieve previous chat logs for the current conversation
     const chatHistory = await getChatLogsByConversationId(conversationId)
