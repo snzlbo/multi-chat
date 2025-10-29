@@ -152,7 +152,7 @@ export const exportPersonas = async (personaIds: number[]): Promise<Blob> => {
 
 // Creates default personas and assigns them to a default group
 export const createDefaultPersonas = async (): Promise<void> => {
-    const groupId = await createGroup('サンプルペルソナ')
+    const groupId = await createGroup('Therapists')
     DummyPersonaData.forEach(async (persona) => {
         await createPersona({ ...persona, group_id: groupId })
     })
