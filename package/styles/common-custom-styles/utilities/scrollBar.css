@@ -1,0 +1,15 @@
+@layer components {
+    .scroll-gutter {
+        padding-right: var(--scrollbar-width);
+    }
+
+    .scroll-gutter-both {
+        padding-left: var(--scrollbar-width);
+        padding-right: var(--scrollbar-width);
+    }
+
+    .scroll-locked {
+        @apply overflow-hidden;
+        padding-right: var(--scrollbar-width);
+    }
+}

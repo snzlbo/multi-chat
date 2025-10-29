@@ -1,0 +1,57 @@
+@layer components {
+    .PersonaTalkLogList {
+        @apply fixed right-0 top-0 h-[100vh] max-w-[420px] z-20 overflow-hidden pointer-events-none;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+
+        .container {
+            @apply bg-secondly duration-600 ease-outExpo h-[100%] overflow-auto pointer-events-auto;
+            transition-property: transform;
+
+            .head {
+                @apply sticky top-0 bg-grayscale-50 flex items-center justify-between p-3 border-b border-grayscale-125;
+
+                .label {
+                    @apply px-[26px];
+                }
+            }
+
+            .logs {
+                @apply grid gap-5 px-[30px] py-[28px];
+
+                .log {
+                    @apply grid gap-[5px];
+
+                    .date {
+                        @apply font-poppins text-sm font-semibold pb-3 border-b border-primary;
+                    }
+
+                    .list {
+                        .item {
+                            .session {
+                                @apply grid gap-2 w-full text-left px-2 py-3 text-sm rounded-lg duration-1200 ease-outExpo;
+                                transition-property: background-color;
+                                grid-template-columns: 46px 1fr;
+
+                                .time {
+                                    @apply font-poppins text-grayscale-600 font-normal tracking-[0.04em];
+                                }
+
+                                @media (hover: hover) {
+                                    &:hover {
+                                        @apply bg-grayscale-50 duration-600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .PersonaTalkLogList--close {
+        .container {
+            transform: translate(100%, 0);
+        }
+    }
+}

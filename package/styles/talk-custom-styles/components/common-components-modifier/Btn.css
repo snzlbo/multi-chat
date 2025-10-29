@@ -1,0 +1,7 @@
+@layer components {
+    .Btn {
+        &:where(.edit-control *) {
+            @apply min-w-[128px];
+        }
+    }
+}

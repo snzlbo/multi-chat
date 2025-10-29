@@ -1,0 +1,30 @@
+---
+import 'package/styles/common-custom-styles/index.css'
+import 'package/styles/talk-custom-styles/index.css'
+import SceneList from 'package/mock-components/astro-templates/SceneList.astro'
+import { Scenes, ScenesEn } from '@data/scene.data'
+import brandUrl from '@assets/images/brand.webp'
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>AIQQQ TALK | Scene List</title>
+        <link rel="icon" type="image/webp" href={brandUrl.src} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <SceneList
+            title="AIQQQ TALK Scene List"
+            scenes={Scenes}
+            scenes_en={ScenesEn}
+        />
+    </body>
+</html>

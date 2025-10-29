@@ -1,0 +1,27 @@
+@layer components {
+    .Home {
+        @apply relative w-full bg-secondly;
+
+        .no-content {
+            @apply flex items-center justify-center text-center leading-[1.8] pb-12;
+            height: calc(100svh - 324px);
+        }
+
+        &.open {
+            animation-name: fadeIn;
+            animation-duration: 600ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+        &.close {
+            @apply fixed overflow-hidden pointer-events-none;
+            animation-name: fadeOut;
+            animation-duration: 2400ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+    }
+}

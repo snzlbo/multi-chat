@@ -1,0 +1,34 @@
+{
+    "input": {
+        "initialMessage": "Let’s start chatting",
+        "placeholder": "Ask a question",
+        "imageSizeExceeded": "Some of the images exceeds the maximum allowed size of 20MB."
+    },
+    "settings": {
+        "label": "Conversation Settings",
+        "options": {
+            "history": {
+                "label": "Conversation History"
+            },
+            "delete": {
+                "label": "Delete Conversation"
+            },
+            "individualPromptSetting": {
+                "label": "Individual Conversation Prompt Settings"
+            }
+        }
+    },
+    "removeConfirmModal": {
+        "title": "Are you sure you want to delete?",
+        "text": "This action cannot be undone. Are you sure?",
+        "no": "No",
+        "confirm": "Yes"
+    },
+    "expertSettingModal": {
+        "title": "Edit Individual Conversation Prompt",
+        "text": "You can tune reply style and tone in chat; changes affect only the current persona’s prompt.",
+        "revert": "Revert to Default Prompt",
+        "cancel": "Cancel",
+        "save": "Save"
+    }
+}

@@ -1,0 +1,35 @@
+@layer components {
+    .PersonaDetail {
+        @apply relative grid h-full bg-grayscale-50 min-h-[100svh];
+        grid-template-rows: auto 1fr 68px;
+        grid-template-areas:
+            'header'
+            'editor'
+            'control';
+
+        .close {
+            @apply fixed top-3 right-3;
+        }
+
+        .editor {
+            grid-area: editor;
+        }
+    }
+
+    .PersonaDetail--open {
+        animation-name: fadeIn;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    .PersonaDetail--close {
+        @apply fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden;
+        animation-name: fadeOut;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+}

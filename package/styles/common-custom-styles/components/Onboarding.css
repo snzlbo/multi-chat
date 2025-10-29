@@ -1,0 +1,24 @@
+@layer components {
+    .Onboarding {
+        @apply relative z-10 bg-secondly rounded-2xl overflow-hidden;
+        width: min(100%, 480px);
+
+        .slide {
+            .close {
+                @apply absolute right-3 top-3 rounded-full duration-1200 ease-outExpo;
+                transition-property: background-color;
+                animation-name: fadeIn;
+                animation-duration: 600ms;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-timing-function: var(--easeOutCubic);
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-hoverColor duration-600;
+                    }
+                }
+            }
+        }
+    }
+}

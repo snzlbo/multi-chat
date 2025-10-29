@@ -1,0 +1,28 @@
+{
+    "title": "Persona Details",
+    "personaDescription": {
+        "label": "Persona Description:"
+    },
+    "chat": "Chat",
+    "edit": "Edit",
+    "duplicate": "Duplicate",
+    "editMode": {
+        "back": "Back",
+        "confirm": "Confirm"
+    },
+    "duplicateMode": {
+        "back": "Back",
+        "save": "Save Copy"
+    },
+    "removeConfirmModal": {
+        "title": "Are you sure you want to delete?",
+        "text": "This action cannot be undone. Are you sure?",
+        "no": "No",
+        "confirm": "Yes"
+    },
+    "closeConfirmModal": {
+        "text": "You have unsaved changes. Close anyway?",
+        "no": "No",
+        "close": "Close without Saving"
+    }
+}

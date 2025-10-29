@@ -1,0 +1,26 @@
+{
+    "common": {
+        "cancel": "Cancel"
+    },
+    "exportPersona": {
+        "label": "Export Persona",
+        "message": "Exporting {{n}} selected personas.",
+        "notes": "Exported persona files can be re-imported via Import Persona.",
+        "export": "Export"
+    },
+    "setGroup": {
+        "label": "Set Group",
+        "createNewGroup": "Create a New Group",
+        "moveToGroup": "Move to Group"
+    },
+    "deletePersona": {
+        "label": "Delete",
+        "title": "Delete Persona",
+        "message": "Delete the {{n}} selected personas?",
+        "notes": "This action cannot be undone."
+    },
+    "deleteGroup": {
+        "label": "Delete Group",
+        "message": "If all personas in the group become zero, the group “●●●●X” will be deleted. Continue?"
+    }
+}

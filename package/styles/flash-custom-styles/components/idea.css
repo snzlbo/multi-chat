@@ -1,0 +1,265 @@
+@layer components {
+    .Idea {
+        @apply h-full;
+
+        .inner {
+            @apply relative grid bg-secondly rounded-xl transition duration-600 ease-outExpo h-full;
+            grid-template-rows: auto 1fr;
+            /* user-select: none; */
+
+            .thumbnail {
+                user-select: none;
+
+                .generate {
+                    @apply relative duration-600 ease-outExpo pt-[46%];
+                    transition-property: padding-top;
+
+                    &.generate--generating {
+                        @apply pt-[66.6%] pointer-events-none;
+                    }
+
+                    &.fade-out {
+                        animation-name: fadeOutGenerateBtn;
+                        animation-duration: 600ms;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: both;
+                    }
+
+                    .spacer {
+                        @apply absolute top-0 left-0 w-full h-full pt-[5px] px-[5px];
+
+                        .btn {
+                            @apply relative flex justify-center items-center gap-3 text-sm text-grayscale-600 bg-grayscale-100 rounded-xl duration-600 ease-outExpo border border-grayscale-100 overflow-hidden w-full h-full;
+                            transition-property: border-radius, color;
+
+                            .icon {
+                                @apply relative z-10 transition duration-600 ease-outExpo;
+                            }
+
+                            .text {
+                                @apply relative z-10;
+                            }
+
+                            .dot {
+                                @apply absolute top-[50%] left-[50%] z-10 duration-600 ease-outExpo opacity-0;
+                                transition-property: opacity;
+                                transform: translate(-50%, -50%);
+
+                                svg {
+                                    path {
+                                        @apply fill-grayscale-300;
+                                    }
+                                }
+                            }
+
+                            @media (hover: hover) {
+                                &:hover {
+                                    @apply text-primary rounded-[50px];
+
+                                    .icon {
+                                        filter: brightness(0);
+                                    }
+                                }
+                            }
+
+                            &.btn--generating {
+                                @apply text-primary/0;
+
+                                .icon {
+                                    @apply opacity-0;
+                                }
+
+                                .dot {
+                                    @apply opacity-100;
+
+                                    svg {
+                                        path {
+                                            animation-name: generateThumbnail;
+                                            animation-duration: 1200ms;
+                                            animation-iteration-count: infinite;
+                                            animation-timing-function: linear;
+
+                                            &:nth-child(2) {
+                                                animation-delay: 200ms;
+                                            }
+
+                                            &:nth-child(3) {
+                                                animation-delay: 400ms;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image {
+                    @apply overflow-hidden rounded-xl transition duration-600 ease-outExpo;
+
+                    .clip {
+                        @apply duration-600 ease-outExpo;
+                        transition-property: transform;
+                    }
+
+                    img {
+                        @apply block transition duration-600 ease-outExpo opacity-100 w-full object-cover;
+                        aspect-ratio: 3/2;
+                        animation-name: fadeInThumbnail;
+                        animation-duration: 600ms;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: both;
+                    }
+                }
+            }
+
+            .detail {
+                @apply grid gap-2 pt-3 px-3 pb-5;
+                grid-template-rows: auto 1fr;
+
+                .name {
+                    @apply grid items-start gap-2 text-lg;
+                    grid-template-columns: 1fr 36px;
+
+                    .title {
+                        @apply overflow-hidden pt-1;
+                        white-space: none;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    .bookmark {
+                        .icon {
+                            @apply flex justify-center items-center bg-grayscale-50 border border-grayscale-125/0 rounded-full p-0 -mr-1 transition duration-600 ease-outExpo w-full max-w-[36px];
+                            aspect-ratio: 1/1;
+                            user-select: none;
+
+                            svg {
+                                path {
+                                    @apply stroke-grayscale-900 fill-grayscale-900/0 transition-all duration-600 ease-outExpo;
+                                }
+                            }
+
+                            @media (hover: hover) {
+                                &:hover {
+                                    @apply cursor-pointer border-primary bg-secondly;
+                                    transform: scale(1.05);
+                                }
+                            }
+
+                            &:active {
+                                transform: scale(0.98);
+                            }
+
+                            &.icon--bookmarked {
+                                @apply bg-quaternary border-grayscale-125;
+
+                                svg {
+                                    path {
+                                        @apply fill-grayscale-900;
+                                    }
+                                }
+                            }
+
+                            &.icon--skeleton {
+                                @apply bg-grayscale-100;
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    @apply text-[13px] text-grayscale-500 leading-[1.5] h-[7.5em] overflow-hidden;
+                    white-space: none;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+
+                    &.text--skeleton {
+                        @apply flex flex-col gap-[0.5em] py-[0.125em];
+                    }
+                }
+            }
+        }
+    }
+
+    .Idea--bookmarked {
+        .inner {
+            @apply bg-grayscale-50;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply cursor-pointer bg-grayscale-100;
+                }
+            }
+        }
+    }
+
+    .Idea--generated {
+        .inner {
+            animation-name: fadeIn;
+            animation-duration: 1200ms;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply cursor-pointer bg-grayscale-50;
+
+                    .thumbnail {
+                        .image {
+                            .clip {
+                                transform: scale(1.075);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+
+            &.loaded {
+                animation-name: none;
+            }
+        }
+    }
+
+    .Idea--empty {
+        @apply invisible;
+    }
+
+    @keyframes fadeOutGenerateBtn {
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeInThumbnail {
+        from {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes generateThumbnail {
+        0% {
+            @apply fill-grayscale-300;
+        }
+        33% {
+            @apply fill-grayscale-300;
+        }
+        66% {
+            @apply fill-grayscale-950;
+        }
+        100% {
+            @apply fill-grayscale-300;
+        }
+    }
+}

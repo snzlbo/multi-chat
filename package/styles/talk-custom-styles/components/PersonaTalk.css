@@ -1,0 +1,176 @@
+@layer components {
+    .PersonaTalk {
+        @apply relative bg-grayscale-50 min-h-[100svh];
+
+        .bg {
+            @apply sticky flex items-start justify-end z-0 w-[100%] h-0 top-0 left-0;
+
+            .clip {
+                @apply absolute w-[100%] h-[100svh] overflow-hidden;
+
+                img {
+                    @apply block relative w-[88%];
+                    transform: translate(30%, -3%);
+                }
+            }
+
+            .bg--open {
+                animation-name: persona-talk-bg-start;
+                animation-duration: 2400ms;
+                animation-timing-function: var(--easeOutExpo);
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+            }
+
+            .bg--close {
+            }
+        }
+
+        .navigation {
+            @apply sticky top-0 grid w-full items-center justify-between gap-3 py-[10px] px-3 z-20;
+            grid-template-columns: 1fr auto 40px;
+            animation-name: persona-talk-start-slide;
+            animation-duration: 1200ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+            .back {
+                @apply flex items-center gap-[7px] top-[10px] left-[12px] text-left;
+
+                .arrow {
+                    @apply flex items-center gap-[10px] py-[4px] pl-[8px] pr-[6px] rounded-lg duration-600 ease-outExpo;
+                    transition-property: background-color;
+
+                    .thumbnail {
+                        @apply w-[36px] h-[36px] rounded-lg overflow-hidden;
+
+                        img {
+                            transform-origin: 50% 0;
+                            transform: scale(1.6);
+                        }
+                    }
+                }
+
+                .text {
+                    @apply grid gap-[1px] pb-[2px] duration-1200 ease-outExpo;
+                    transition-property: opacity;
+
+                    .name {
+                        @apply text-[13px] overflow-hidden whitespace-nowrap text-ellipsis;
+                    }
+
+                    .other {
+                        @apply text-sm overflow-hidden whitespace-nowrap text-ellipsis;
+                    }
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        .arrow {
+                            @apply bg-hoverColor;
+                        }
+
+                        .text {
+                            @apply opacity-50;
+                        }
+                    }
+                }
+            }
+
+            .settings {
+                margin-left: auto;
+            }
+        }
+
+        .overlay {
+            @apply sticky bottom-0 w-full w-[100%] h-[220px] -mt-[220px];
+            background: linear-gradient(
+                180deg,
+                rgba(243, 243, 245, 0) 9.83%,
+                #f3f3f5 45.05%
+            );
+        }
+    }
+
+    .PersonaTalk--open {
+        animation-name: persona-talk-start;
+        animation-duration: 1200ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    .PersonaTalk--close {
+        @apply fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden;
+        animation-name: persona-talk-end;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    @keyframes persona-talk-start {
+        from {
+            @apply opacity-0 bg-grayscale-300;
+        }
+        to {
+            @apply opacity-100 bg-grayscale-50;
+        }
+    }
+
+    @keyframes persona-talk-start-slide {
+        from {
+            @apply opacity-0;
+            transform: translate(0, 50px);
+        }
+        to {
+            @apply opacity-100;
+            transform: none;
+        }
+    }
+
+    @keyframes persona-talk-end {
+        from {
+            @apply opacity-100 bg-grayscale-50;
+            transform: none;
+        }
+        to {
+            @apply opacity-0;
+            transform: scale(0.97);
+        }
+    }
+
+    @keyframes persona-talk-bg-start {
+        from {
+            @apply opacity-0;
+            transform: translate(30%, 0) rotate(10deg);
+        }
+        to {
+            @apply opacity-100;
+            transform: translate(30%, -3%) rotate(0deg);
+        }
+    }
+
+    @keyframes persona-talk-bg-end {
+        from {
+            @apply opacity-100;
+            transform: translate(30%, -3%) rotate(0deg);
+        }
+        to {
+            @apply opacity-0;
+            transform: translate(30%, -3%) rotate(-10deg);
+        }
+    }
+
+    @keyframes persona-talk-message-start {
+        from {
+            @apply opacity-0;
+            transform: translate(0, 15%);
+        }
+        to {
+            @apply opacity-100;
+            transform: translate(0, 50%);
+        }
+    }
+}

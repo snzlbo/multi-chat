@@ -1,0 +1,16 @@
+@layer components {
+    .IconBtn {
+        @apply flex items-center justify-end duration-600 ease-outExpo rounded-full;
+        transition-property: transform, background-color;
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-hoverColor;
+            }
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}

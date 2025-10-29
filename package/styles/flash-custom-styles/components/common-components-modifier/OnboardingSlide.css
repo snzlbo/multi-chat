@@ -1,0 +1,17 @@
+@layer components {
+    .OnboardingSlide {
+        @apply min-h-[600px];
+
+        .message {
+            .initial-slide {
+                .logo {
+                    @apply w-[140px];
+                }
+            }
+        }
+    }
+
+    .OnboardingSlide--require {
+        @apply min-h-[455px];
+    }
+}

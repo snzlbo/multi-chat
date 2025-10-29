@@ -1,0 +1,12 @@
+{
+    "enterGroupName": "グループ名を入力(必須)",
+    "matchedGroup": "マッチしたグループ",
+    "noMatchedGroup": "マッチするグループはありません",
+    "setGroup": {
+        "other": "その他"
+    },
+    "filterGroup": {
+        "label": "絞込",
+        "currentGroups": "表示中のグループ"
+    }
+}

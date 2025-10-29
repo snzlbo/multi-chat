@@ -1,0 +1,40 @@
+@import 'components/AnchorScrollLink.css';
+@import 'components/AutoResizingTextarea.css';
+@import 'components/BaseAppBar.css';
+@import 'components/Btn.css';
+@import 'components/DropZone.css';
+@import 'components/Faq.css';
+@import 'components/IconBtn.css';
+@import 'components/KeywordToggle.css';
+@import 'components/Modal.css';
+@import 'components/ModalProps.css';
+@import 'components/Onboarding.css';
+@import 'components/OnboardingSlide.css';
+@import 'components/Pulldown.css';
+@import 'components/Select.css';
+@import 'components/SettingScreen.css';
+@import 'components/SettingScreenProps.css';
+@import 'components/SuggestForm.css';
+@import 'components/TermList.css';
+@import 'components/Textarea.css';
+@import 'components/TextField.css';
+@import 'components/TextLink.css';
+@import 'components/Toggle.css';
+
+@import 'utilities/basicTransitions.css';
+@import 'utilities/scrollBar.css';
+@import 'utilities/skeleton.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+    --easeOutBack: cubic-bezier(0.18, 0.89, 0.32, 1.27);
+    --easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
+    --scrollbar-width: 0px;
+}
+
+body {
+}

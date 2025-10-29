@@ -1,0 +1,10 @@
+@layer components {
+    .Textarea {
+        @apply bg-grayscale-50 border border-grayscale-100 px-6 py-[20px] text-sm leading-[1.6] rounded-lg outline-0;
+        resize: none;
+    }
+
+    .Textarea--grayscale-100 {
+        @apply bg-grayscale-100;
+    }
+}

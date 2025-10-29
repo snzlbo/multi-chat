@@ -1,0 +1,16 @@
+{
+    "label": "Import Persona",
+    "title": "Import Persona Data",
+    "uploadStep": {
+        "label": "Select or Drop Persona File to Upload",
+        "reset": "Reset",
+        "notes": "Supported format: JSON",
+        "confirm": "Confirm"
+    },
+    "importStep": {
+        "text": "Found {{n}} persona records.",
+        "setGroup": "Specify the group name to assign them to.",
+        "back": "Back",
+        "import": "Import"
+    }
+}

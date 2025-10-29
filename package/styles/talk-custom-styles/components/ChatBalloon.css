@@ -1,0 +1,124 @@
+@layer components {
+    .ChatBalloon {
+        @apply bg-secondly px-8 py-[11px] rounded-3xl leading-[1.6] tracking-[0.05em];
+        animation-name: chat-balloon-start;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+
+        .prose {
+            animation-name: fadeIn;
+            animation-duration: 2400ms;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+
+        p {
+            @apply my-[15px];
+        }
+
+        strong {
+            @apply font-bold;
+        }
+
+        h2 {
+            @apply mt-5 mb-[15px] text-[21px] font-bold;
+        }
+
+        h3 {
+            @apply mt-5 mb-[15px] text-lg font-bold;
+        }
+
+        ul,
+        ol {
+            @apply grid gap-[0.2em] my-[15px];
+        }
+
+        ul {
+            li {
+                @apply indent-[-1em] pl-[1em];
+
+                &:before {
+                    content: '・';
+                }
+            }
+        }
+
+        ol {
+            @apply list-decimal;
+
+            li {
+                @apply ml-[1em];
+            }
+        }
+
+        hr {
+            @apply my-[50px] border-grayscale-300;
+        }
+
+        table {
+            @apply my-[15px];
+        }
+
+        .dot {
+            @apply relative duration-600 ease-outExpo py-4;
+            transition-property: opacity;
+
+            svg {
+                path {
+                    @apply fill-grayscale-300;
+                    animation-name: generateProse;
+                    animation-duration: 1200ms;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+
+                    &:nth-child(2) {
+                        animation-delay: 200ms;
+                    }
+
+                    &:nth-child(3) {
+                        animation-delay: 400ms;
+                    }
+                }
+            }
+        }
+    }
+
+    .ChatBalloon--self {
+        @apply bg-grayscale-75 max-w-[500px] w-full ml-auto;
+        transform-origin: 100% 0;
+    }
+
+    .ChatBalloon--persona {
+        transform-origin: 0 0;
+
+        &:where(.PersonaTalkLog--new-message-sending *) {
+            animation-delay: 300ms;
+        }
+    }
+
+    @keyframes generateProse {
+        0% {
+            @apply fill-grayscale-100;
+        }
+        33% {
+            @apply fill-grayscale-100;
+        }
+        66% {
+            @apply fill-grayscale-400;
+        }
+        100% {
+            @apply fill-grayscale-100;
+        }
+    }
+
+    @keyframes chat-balloon-start {
+        from {
+            transform: scale(0.9);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}

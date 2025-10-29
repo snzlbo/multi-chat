@@ -1,0 +1,111 @@
+@layer components {
+    .SuggestForm {
+        @apply relative;
+
+        .field,
+        .display {
+            @apply h-[44px] text-left p-0;
+
+            .text {
+                @apply block max-w-[100%] overflow-hidden h-[1.5em];
+                word-break: break-all;
+            }
+
+            &.display--inputted {
+                @apply bg-secondly border-grayscale-150;
+            }
+
+            &.display--empty {
+                @apply text-grayscale-400 bg-grayscale-50 border-grayscale-50;
+            }
+        }
+
+        .popup {
+            @apply absolute top-[-3px] left-[-3px] rounded-[22px] bg-blueGray-50 border-[3px] border-secondly overflow-hidden opacity-0 invisible ease-outExpo z-20;
+            transition-property: opacity, visibility;
+            transition-duration: 600ms, 0ms;
+            width: calc(100% + 6px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+            &.popup--active {
+                @apply opacity-100 visible;
+                transition-duration: 600ms, 0ms;
+            }
+
+            &.popup--down {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+            }
+
+            &.popup--no-border {
+                @apply border-[transparent] bg-[transparent];
+            }
+
+            .words {
+                @apply py-2 mx-4 border-t border-grayscale-150 hidden;
+
+                &.words--active {
+                    @apply block;
+                    transition-duration: 600ms;
+                }
+
+                .category {
+                    @apply text-sm text-grayscale-450 text-left py-2;
+                }
+
+                .word {
+                    @apply -mx-4;
+
+                    .text {
+                        @apply flex items-center w-full gap-[10px] px-4 py-[5px] text-grayscale-875 text-sm leading-[1.6] text-left duration-600 ease-outExpo;
+                        transition-property: background-color;
+
+                        @media (hover: hover) {
+                            &:hover {
+                                @apply bg-grayscale-100;
+                            }
+                        }
+                    }
+
+                    .icon--arrow {
+                        @apply block w-4 h-4;
+                        transform: rotate(180deg);
+
+                        svg {
+                            @apply w-full h-full;
+                        }
+                    }
+                }
+            }
+        }
+
+        .display,
+        input[type='text'] {
+            @apply block bg-grayscale-50 border border-grayscale-50 outline-none rounded-full text-sm tracking-[0.05em] w-full px-[26px] py-[11px];
+            transition-property: border, background-color;
+
+            &.current {
+                @apply bg-secondly border border-grayscale-150;
+            }
+
+            &.field {
+                @apply px-4 text-[15px];
+            }
+        }
+
+        .field,
+        input[type='text'].field.current {
+            @apply block bg-grayscale-50 border border-grayscale-125 rounded-lg text-[15px] tracking-[0.05em] w-full px-4 py-[11px];
+
+            .text {
+                @apply leading-[1.35];
+            }
+
+            &.field--inputted {
+            }
+
+            &.field--empty {
+                @apply text-grayscale-400;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@layer components {
+    .Generator {
+        @apply sticky top-0 bg-grayscale-25 z-20 border-b border-b-grayscale-125 duration-600 ease-outExpo;
+        transition-property: background-color;
+
+        .head {
+            @apply py-[18px];
+        }
+
+        .detail {
+            @apply absolute w-full top-[100%] bg-grayscale-50 left-0 pt-3 pb-6 border-b border-b-grayscale-125 opacity-0 invisible duration-600 ease-outExpo pointer-events-none;
+            transition-property: background-color, opacity, visibility;
+
+            @media screen and (max-width: 767px) {
+                .inner {
+                    .layout {
+                        @apply gap-0;
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+
+        .inner {
+            @apply mx-auto max-w-[1278px] px-7;
+            .layout {
+                @apply grid gap-5 items-center;
+                grid-template-columns: 1fr 176px;
+                grid-template-areas: 'input control';
+
+                .input {
+                    @apply grid gap-[15px];
+                    grid-area: input;
+
+                    .keyword {
+                        @apply flex;
+
+                        .chip {
+                            @apply text-sm tracking-[0.05em] bg-secondly px-[13px] py-[5px] rounded-xl duration-600 ease-outExpo;
+                            transition-property:
+                                background-color, color, opacity;
+                        }
+
+                        input[type='checkbox'] {
+                            @apply w-0 h-0 m-0 p-0 opacity-0;
+
+                            &:checked + .chip {
+                                @apply bg-quaternary;
+
+                                @media (hover: hover) {
+                                    &:hover {
+                                        @apply bg-grayscale-100;
+                                    }
+                                }
+                            }
+
+                            &:disabled + .chip {
+                                @apply opacity-20 pointer-events-none;
+                            }
+                        }
+
+                        @media (hover: hover) {
+                            &:hover {
+                                .chip {
+                                    @apply cursor-pointer bg-grayscale-100;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .control {
+                    grid-area: control;
+                }
+            }
+        }
+    }
+
+    .Generator--active {
+        @apply bg-secondly;
+
+        .detail {
+            @apply opacity-100 visible pointer-events-auto;
+        }
+
+        .inner {
+            .layout {
+                .input {
+                    .theme {
+                        input[type='text'] {
+                            @apply bg-secondly border-grayscale-150;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Generator--scrolled {
+        @apply bg-secondly;
+    }
+}

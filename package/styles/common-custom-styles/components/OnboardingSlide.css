@@ -1,0 +1,182 @@
+@layer components {
+    .OnboardingSlide {
+        @apply grid w-full h-full min-h-[632px] opacity-0 duration-400 ease-outCubic;
+        width: min(100%, 480px);
+        transition-property: opacity;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            'message'
+            'control';
+        .message {
+            @apply text-[15px] leading-[1.6] text-center;
+
+            grid-area: message;
+
+            .initial-slide {
+                @apply grid gap-[48px] pt-16;
+
+                .logo {
+                    @apply w-[132px] mx-auto;
+                }
+            }
+
+            .image-slide {
+                @apply grid gap-8;
+
+                .visual {
+                    @apply w-full;
+                }
+            }
+
+            .texts {
+                @apply grid gap-3 px-[40px];
+            }
+
+            .heading {
+                @apply text-lg font-bold;
+            }
+
+            .heading--sm {
+                @apply font-bold;
+            }
+
+            .notes {
+                @apply text-[13px];
+            }
+
+            .require-slide {
+                @apply flex items-center justify-center h-full;
+
+                .head {
+                    @apply grid gap-[10px];
+
+                    .shape {
+                        @apply w-[54px] mx-auto;
+                    }
+                }
+
+                .texts {
+                    @apply mt-10;
+                }
+            }
+        }
+
+        .control {
+            @apply grid gap-5;
+            grid-area: control;
+
+            .check {
+                label {
+                    @apply flex items-center justify-center gap-[7px];
+
+                    .marker {
+                        @apply flex items-center justify-center w-[16px] h-[16px] border border-primary bg-secondly rounded-[5px];
+
+                        svg {
+                            @apply hidden;
+                        }
+                    }
+
+                    input[type='checkbox'] {
+                        @apply absolute w-0 h-0 invisible;
+
+                        &:checked {
+                            & + .marker {
+                                svg {
+                                    @apply block;
+                                }
+                            }
+                        }
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply cursor-pointer;
+                        }
+                    }
+                }
+            }
+
+            .dots {
+                @apply flex items-center justify-center gap-2 min-h-[10px];
+
+                .dot {
+                    @apply w-[10px] h-[10px] bg-grayscale-125 rounded-full;
+
+                    &.current {
+                        @apply bg-quaternary;
+                    }
+                }
+            }
+
+            .navigation {
+                @apply grid gap-2 px-7 pb-8;
+                grid-template-columns: 40px 1fr 40px;
+                grid-template-areas: 'left center right';
+
+                .prev {
+                    @apply flex items-center justify-center border border-grayscale-150 rounded-full duration-1200 ease-outExpo;
+                    transition-property: background-color, transform;
+                    grid-area: left;
+
+                    svg {
+                        @apply w-5;
+                        transform: translate(-1px, 0);
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply bg-hoverColor duration-600;
+                        }
+                    }
+
+                    &:active {
+                        transform: scale(0.96);
+                    }
+                }
+
+                .Btn {
+                    @apply min-w-[128px] mx-auto;
+                    grid-area: center;
+                }
+            }
+        }
+    }
+
+    .OnboardingSlide--require {
+        @apply min-h-[455px] duration-1200;
+
+        .message {
+            @apply pt-14 pb-4;
+
+            .require-slide {
+                .texts {
+                    @apply mt-6;
+                }
+            }
+
+            .attention {
+                @apply grid gap-[26px];
+                .unit {
+                    @apply grid gap-2;
+                }
+            }
+        }
+
+        .control {
+            .navigation {
+                @apply pb-10;
+            }
+        }
+    }
+
+    .OnboardingSlide--open {
+        @apply opacity-100;
+        transition-delay: 150ms;
+    }
+
+    .OnboardingSlide--close {
+        @apply absolute top-[50%] left-0 opacity-0 w-full h-full pointer-events-none;
+        transform: translate(0, -50%);
+    }
+}

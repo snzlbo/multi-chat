@@ -1,0 +1,50 @@
+@layer components {
+    .PersonaTalkLog {
+        @apply relative flex flex-col gap-8 justify-end max-w-[1256px] pt-7 px-7 pb-[180px] mx-auto box-border;
+        min-height: calc(100svh - 64px);
+        animation-name: fadeIn;
+        animation-timing-function: var(--easeOutExpo);
+        animation-duration: 1200ms;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+
+        .chat {
+            animation-name: fadeIn;
+            animation-timing-function: var(--easeOutExpo);
+            animation-duration: 1200ms;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+
+        .chat--self {
+            padding-left: 10%;
+        }
+
+        .chat--persona {
+            @apply grid gap-8 items-start;
+            grid-template-columns: 92px 1fr;
+
+            &:where(.PersonaTalkLog--new-message-sending *) {
+                animation-delay: 300ms;
+            }
+
+            .thumbnail {
+                @apply rounded-full overflow-hidden;
+
+                img {
+                    transform-origin: 50% 0;
+                    transform: scale(1.35);
+                }
+            }
+
+            .balloon {
+                padding-right: 14%;
+            }
+        }
+    }
+
+    .PersonaTalkLog--removing {
+        animation-name: fadeOut;
+        animation-duration: 600ms;
+    }
+}

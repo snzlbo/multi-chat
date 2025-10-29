@@ -1,0 +1,98 @@
+{
+    "title": "Settings",
+    "common": {
+        "edit": "Edit",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+    },
+    "language": {
+        "label": "Language",
+        "options": {
+            "fr": "Français",
+            "en": "English"
+        }
+    },
+    "deleteAllPersona": {
+        "title": "Are you sure you want to delete?",
+        "label": "Delete All Personas",
+        "text": "Deleting cannot be undone. Also, preset personas will not be deleted. Are you sure?",
+        "button": {
+            "label": "Delete",
+            "no": "No",
+            "confirm": "Yes"
+        }
+    },
+    "faq": {
+        "label": "FAQ",
+        "button": {
+            "label": "FAQ"
+        }
+    },
+    "expertMode": {
+        "label": "Expert Mode",
+        "notes": "Expert mode lets you choose the language model and edit prompts."
+    },
+    "personaExtraction": {
+        "label": "Persona Extraction"
+    },
+    "defaultLanguageModel": {
+        "label": "Default Language Model"
+    },
+    "personaExtractionPrompt": {
+        "label": "Persona Extraction Prompt",
+        "notes": "Edit the prompt for extracting personas from files."
+    },
+    "globalConversationPrompt": {
+        "label": "Global Conversation Prompt",
+        "notes": "Tune response style and tone in chat."
+    },
+    "generateImage": {
+        "label": "Generate Image"
+    },
+    "defaultImageGenerationModel": {
+        "label": "Default Image Generation Model"
+    },
+    "profileImageGenerationPrompt": {
+        "label": "Profile Image Generation Prompt",
+        "notes": "Adjust the the impression and direction of the profile image."
+    },
+    "otherLinks": {
+        "label": "Other Links"
+    },
+    "openAIQQQFLASH": {
+        "label": "Open AIQQQ FLASH",
+        "notes": "AIQQQ FLASH is an AI brainstorming system that delivers ideas in an instant.",
+        "button": {
+            "label": "AIQQQ FLASH"
+        }
+    },
+    "logout": {
+        "title": "Are you sure you want to logout?",
+        "text": "You will now log out of all internal services that require Okta authentication (ESQ-related, Microsoft software, etc.). Are you sure?",
+        "button": {
+            "label": "Logout",
+            "no": "Cancel",
+            "confirm": "Confirm"
+        }
+    },
+    "expertModeOnModal": {
+        "label": "Expert Mode",
+        "text": "Please enter your password",
+        "notes": "For a password, contact the admin office: watabe.kazuhiro@dentsudigital.co.jp <br /><br />Please enter your email address as follows. <br />【AIQQQ TALK パスワード照会】"
+    },
+    "expertModeOffModal": {
+        "label": "Turn Off Expert Mode",
+        "text": "Edited prompts will revert to the default. Are you sure?"
+    },
+    "editPrompts": {
+        "chat": {
+            "title": "Edit Global Conversation Prompt"
+        },
+        "image": {
+            "title": "Edit Profile Image Generation Prompt"
+        },
+        "extract": {
+            "title": "Edit Persona Extraction Prompt"
+        }
+    }
+}

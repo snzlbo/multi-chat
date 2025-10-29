@@ -1,0 +1,215 @@
+@layer components {
+    .PersonaCard {
+        @apply relative bg-grayscale-0 overflow-hidden ease-outExpo rounded-[20px];
+        animation-name: fadeIn;
+        animation-duration: 900ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+
+        .image {
+            @apply absolute z-0 ease-outExpo duration-1200 w-auto h-full box-content rounded-[20px] overflow-hidden;
+            aspect-ratio: 1/1;
+            top: 0;
+            left: 50%;
+            transform-origin: 50% 0;
+            transform: translate(-50%, 0) scale(0.835);
+            transition-property: transform;
+            will-change: transform;
+
+            img {
+                @apply absolute duration-300 w-full h-full top-0 left-0 object-cover;
+            }
+
+            &:after {
+                @apply absolute inset-0 block z-0 duration-600 w-full h-full;
+                content: '';
+                transition-property: background-color;
+                will-change: backdrop-filter;
+            }
+        }
+
+        .inner {
+            @apply grid relative z-0 transition duration-800 pt-[90%];
+
+            .profile {
+                @apply relative z-0 grid transition ease-outExpo duration-1200 bg-secondly gap-[5px] px-[18px] py-[12px];
+                grid-template-rows: auto 1fr;
+
+                .name {
+                    @apply flex overflow-hidden tracking-[0.05em] leading-[1.6] text-[11px];
+                    white-space: none;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+
+                .identity {
+                    @apply overflow-hidden tracking-[0.035em] leading-[1.4] text-[14px] min-h-[5.6em];
+                    white-space: none;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+            .navigation {
+                @apply absolute flex gap-2 flex-col items-center justify-start z-0 pointer-events-none w-full h-full pt-[90%];
+
+                .item {
+                    @apply opacity-0 transition ease-outExpo duration-800;
+                    transform: translate(0, 5px);
+                }
+
+                .btn {
+                    @apply grid gap-1 bg-primary/70 items-center justify-center rounded-full text-grayscale-0 transition duration-300 px-[14px] py-[8px] text-xs min-w-[114px];
+                    grid-template-columns: 20px 1fr;
+
+                    path {
+                        @apply stroke-quaternary transition duration-300;
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply bg-quaternary text-primary;
+                            transform: scale(1.05);
+
+                            path {
+                                @apply stroke-primary;
+                            }
+                        }
+                    }
+
+                    &:active {
+                        @apply duration-200;
+                        transform: scale(1) translate(0, 3px);
+                    }
+                }
+            }
+        }
+
+        .selector {
+            @apply absolute top-0 left-0 w-full h-full;
+
+            input[type='checkbox'] {
+                @apply absolute w-0 h-0 opacity-0;
+
+                &:checked {
+                    & + .marker {
+                        @apply bg-secondly/0;
+
+                        .check {
+                            @apply bg-quaternary border-quaternary;
+
+                            svg {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .marker {
+                @apply flex items-start justify-end w-full h-full p-[10px] bg-secondly/30 duration-600 ease-outExpo;
+                transition-property: background-color, border-color;
+
+                .check {
+                    @apply bg-secondly/70 border-[2px] border-primary rounded-full duration-600 ease-outExpo;
+                    transition-property: background-color;
+
+                    svg {
+                        @apply duration-600 ease-outExpo;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply cursor-pointer;
+
+                    .marker {
+                        @apply bg-secondly/0;
+
+                        .check {
+                            @apply bg-secondly/100 border-secondly;
+
+                            svg {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (hover: hover) {
+            &:not(.PersonaCard--multiple-mode) {
+                &:hover {
+                    @apply ease-outBack;
+
+                    .image {
+                        @apply blur-sm;
+                        transform: translate(-50%, 0) scale(1);
+                    }
+
+                    .inner {
+                        @apply bg-grayscale-150/60;
+
+                        .profile {
+                            transform: translate(0, 100%);
+                        }
+
+                        .navigation {
+                            @apply pointer-events-auto;
+                            .item {
+                                @apply opacity-100;
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .PersonaCard--deleting {
+        @apply pointer-events-none;
+        animation-name: persona-card-delete;
+        animation-duration: 800ms;
+        animation-timing-function: var(--easeOutExpo);
+    }
+
+    .PersonaCard--creating {
+        animation-name: persona-card-create;
+        animation-duration: 1600ms;
+        transform-origin: 50% 50%;
+        animation-timing-function: var(--easeOutExpo);
+    }
+
+    @keyframes persona-card-create {
+        from {
+            transform-origin: 50% 50%;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform-origin: 50% 50%;
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes persona-card-delete {
+        from {
+            transform-origin: 50% 50%;
+            transform: scale(1) translate(0, 0);
+            opacity: 1;
+        }
+        to {
+            transform-origin: 50% 50%;
+            transform: scale(0.9) translate(0, 0);
+            opacity: 0;
+        }
+    }
+}

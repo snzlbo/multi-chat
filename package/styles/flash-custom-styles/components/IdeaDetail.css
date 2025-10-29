@@ -1,0 +1,223 @@
+@layer components {
+    .IdeaDetail {
+        @apply relative bg-secondly min-h-[614px] w-full rounded-2xl;
+
+        @media (hover: hover) {
+            cursor: default;
+        }
+
+        .head {
+            @apply grid gap-y-2 gap-x-3 px-7 pt-6 pb-5;
+            grid-template-columns: auto 1fr;
+
+            .term {
+                @apply text-[13px] grid items-center tracking-[0.03em];
+                grid-column: span 2;
+                grid-template-columns: subgrid;
+
+                .label {
+                    @apply text-[10px] text-grayscale-600 tracking-[0.05em] font-poppins;
+                }
+            }
+        }
+
+        .layout {
+            @apply grid items-center px-[60px];
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                'detail image'
+                'control control';
+
+            .detail {
+                @apply grid gap-8 pr-16;
+                grid-area: detail;
+
+                .bookmark {
+                    .icon {
+                        @apply flex justify-center items-center bg-grayscale-50 border border-grayscale-125/0 rounded-full p-0 -mr-1 transition duration-600 ease-outExpo w-full max-w-[36px];
+                        aspect-ratio: 1/1;
+                        user-select: none;
+
+                        svg {
+                            path {
+                                @apply stroke-grayscale-900 fill-grayscale-900/0 transition-all duration-600 ease-outExpo;
+                            }
+                        }
+
+                        @media (hover: hover) {
+                            &:hover {
+                                @apply cursor-pointer border-primary bg-secondly;
+                                transform: scale(1.05);
+                            }
+                        }
+
+                        &:active {
+                            transform: scale(0.98);
+                        }
+
+                        &.icon--bookmarked {
+                            @apply bg-quaternary border-grayscale-125;
+
+                            svg {
+                                path {
+                                    @apply fill-grayscale-900;
+                                }
+                            }
+                        }
+
+                        &.icon--skeleton {
+                            @apply bg-grayscale-100;
+                        }
+                    }
+                }
+
+                .copy {
+                    @apply grid gap-[10px];
+
+                    .prompts {
+                        @apply grid gap-[10px];
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+
+            .image {
+                @apply relative rounded-lg overflow-hidden;
+                grid-area: image;
+                aspect-ratio: 1/1;
+
+                .generate {
+                    @apply relative h-full duration-600 ease-outExpo;
+                    transition-property: padding-top;
+
+                    &.generate--generating {
+                        @apply pointer-events-none;
+                    }
+
+                    &.fade-out {
+                        animation-name: fadeOutGenerateBtn;
+                        animation-duration: 600ms;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: both;
+                    }
+
+                    .spacer {
+                        @apply w-full h-full;
+
+                        .btn {
+                            @apply relative flex justify-center items-center gap-2 text-xs text-grayscale-600 bg-grayscale-100 rounded-xl duration-600 ease-outExpo border border-grayscale-100 overflow-hidden w-full h-full;
+                            transition-property: border-radius, color;
+
+                            .icon {
+                                @apply relative z-10 transition duration-600 ease-outExpo;
+                            }
+
+                            .text {
+                                @apply relative z-10;
+                            }
+
+                            .dot {
+                                @apply absolute top-[50%] left-[50%] z-10 duration-600 ease-outExpo opacity-0;
+                                transition-property: opacity;
+                                transform: translate(-50%, -50%);
+
+                                svg {
+                                    path {
+                                        @apply fill-grayscale-300;
+                                    }
+                                }
+                            }
+
+                            @media (hover: hover) {
+                                &:hover {
+                                    @apply text-primary rounded-[50px] cursor-pointer;
+
+                                    .icon {
+                                        filter: brightness(0);
+                                    }
+                                }
+                            }
+
+                            &.btn--generating {
+                                @apply text-primary/0;
+
+                                .icon {
+                                    @apply opacity-0;
+                                }
+
+                                .dot {
+                                    @apply opacity-100;
+
+                                    svg {
+                                        path {
+                                            animation-name: generateThumbnail;
+                                            animation-duration: 1200ms;
+                                            animation-iteration-count: infinite;
+                                            animation-timing-function: linear;
+
+                                            &:nth-child(2) {
+                                                animation-delay: 200ms;
+                                            }
+
+                                            &:nth-child(3) {
+                                                animation-delay: 400ms;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .thumbnail {
+                    img {
+                        @apply block w-full h-full object-cover opacity-0;
+                        animation-name: fadeInDetailThumbnail;
+                        animation-duration: 900ms;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: both;
+                    }
+                }
+            }
+
+            .control {
+                @apply flex items-center justify-center pt-8 pb-9;
+                grid-area: control;
+            }
+
+            @media screen and (max-width: 1020px) {
+                .detail {
+                    @apply pr-[10%];
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'detail'
+                    'image'
+                    'control';
+
+                .detail {
+                    @apply pr-0 pb-10;
+                }
+            }
+        }
+
+        .close {
+            @apply absolute top-3 right-3;
+        }
+    }
+
+    @keyframes fadeInDetailThumbnail {
+        from {
+            opacity: 0;
+            transform: scale(1.025);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

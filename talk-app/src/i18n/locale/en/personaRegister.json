@@ -1,0 +1,35 @@
+{
+    "label": "Generate New Persona",
+    "title": "Create New Persona",
+    "common": {
+        "generate": "Generate",
+        "confirm": "Confirm",
+        "back": "Back"
+    },
+    "manualMode": {
+        "label": "Manual Input",
+        "guide1": "Enter defining text for the persona and click Create.",
+        "guide2": "Enter a name and attributes.<br />Describe attributes clearly to make personas easier to find; you may also assign a group."
+    },
+    "fileMode": {
+        "label": "upload a file",
+        "notes": "Supported format: JPEG (Please convert any reference materials into JPEG)",
+        "extract": "Extract",
+        "expertSetting": "Advanced Extraction Settings"
+    },
+    "personaDescription": {
+        "label": "Persona Description:",
+        "notes": "You can also edit the text directly."
+    },
+    "editConfirmModal": {
+        "title": "Change the persona description?",
+        "message": "Changing this will delete the generated persona’s name, image, and attributes.",
+        "cancel": "Cancel",
+        "change": "Change"
+    },
+    "resetConfirmModal": {
+        "message": "The current persona description and profile image will be removed. Proceed?",
+        "no": "No",
+        "yes": "Yes"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "title": "ペルソナ詳細",
+    "personaDescription": {
+        "label": "ペルソナ説明文章："
+    },
+    "chat": "トークする",
+    "edit": "編集",
+    "duplicate": "複製",
+    "editMode": {
+        "back": "戻る",
+        "confirm": "確定する"
+    },
+    "duplicateMode": {
+        "back": "戻る",
+        "save": "複製を保存"
+    },
+    "removeConfirmModal": {
+        "title": "本当に削除しますか？",
+        "text": "削除すると戻すことができません。<br />よろしいですか？",
+        "no": "いいえ",
+        "confirm": "はい"
+    },
+    "closeConfirmModal": {
+        "text": "編集した内容は保存されていませんが、<br />ここのまま閉じてよろしいですか？",
+        "no": "いいえ",
+        "close": "保存せず閉じる"
+    }
+}

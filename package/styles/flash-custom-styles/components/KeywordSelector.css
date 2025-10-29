@@ -1,0 +1,32 @@
+@layer components {
+    .KeywordSelector {
+        @apply relative flex flex-wrap gap-2 px-3 py-2 border border-grayscale-150 rounded-lg min-h-[48px] bg-secondly;
+
+        .placeholder {
+            @apply absolute top-[1px] left-6 text-sm leading-[46px] text-grayscale-450 overflow-hidden whitespace-nowrap;
+            width: calc(100% - 70px);
+        }
+
+        .manual {
+            @apply absolute w-full h-full top-0 left-0 px-6 py-3 text-sm outline-none rounded-lg opacity-0 duration-300 ease-outExpo;
+            transition-property: opacity;
+
+            &::placeholder {
+                @apply text-grayscale-450;
+            }
+
+            &:focus {
+                @apply opacity-100 z-20;
+            }
+        }
+
+        .manual--focused {
+            @apply opacity-100 z-20;
+        }
+
+        .random {
+            @apply relative z-10;
+            margin-left: auto;
+        }
+    }
+}

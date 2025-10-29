@@ -1,0 +1,24 @@
+@layer components {
+    .SettingScreenProps {
+    }
+
+    .SettingScreenProps--heading {
+        @apply text-lg leading-[1.6] tracking-[.03em] pb-[17px] font-bold border-b-[2px] border-grayscale-950;
+    }
+
+    .SettingScreenProps--anchors {
+        @apply flex flex-wrap gap-x-5 gap-y-3;
+    }
+
+    .SettingScreenProps--faq {
+        @apply grid gap-[82px] pb-[90px];
+
+        .head {
+            @apply grid gap-[34px];
+        }
+
+        .list {
+            @apply grid gap-[90px];
+        }
+    }
+}

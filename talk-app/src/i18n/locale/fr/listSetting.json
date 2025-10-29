@@ -1,0 +1,24 @@
+{
+    "group": {
+        "label": "グループ",
+        "setting": {
+            "filter": {
+                "label": "絞込"
+            },
+            "sort": {
+                "label": "並替",
+                "asc": "昇順",
+                "desc": "降順"
+            }
+        }
+    },
+    "persona": {
+        "label": "ペルソナ",
+        "setting": {
+            "multipleSelect": {
+                "label": "複数選択",
+                "exit": "選択モードを終了"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@layer components {
+    .TextLink {
+        @apply underline duration-1200 ease-outExpo;
+        transition-property: opacity, color;
+
+        @media (hover: hover) {
+            &:hover {
+                @apply opacity-50 text-primary duration-600;
+
+                svg {
+                    path {
+                        @apply stroke-primary duration-600;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import 'components/common-components-modifier/BaseAppBar.css';
+@import 'components/common-components-modifier/Btn.css';
+@import 'components/common-components-modifier/ModalProps.css';
+@import 'components/common-components-modifier/SuggestForm.css';
+
+@import 'components/BottomAppBar.css';
+@import 'components/BottomNavigation.css';
+@import 'components/ChatBalloon.css';
+@import 'components/Home.css';
+@import 'components/listSettings.css';
+@import 'components/PersonaCard.css';
+@import 'components/PersonaDetail.css';
+@import 'components/PersonaDetailEditor.css';
+@import 'components/PersonaGroup.css';
+@import 'components/PersonaGroupWrapper.css';
+@import 'components/PersonaProfile.css';
+@import 'components/PersonaRegister.css';
+@import 'components/PersonaTalk.css';
+@import 'components/PersonaTalkInput.css';
+@import 'components/PersonaTalkLog.css';
+@import 'components/PersonaTalkLogList.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    @apply bg-blueGray-50 font-medium;
+    font-family: 'Zen Kaku Gothic New', serif;
+}

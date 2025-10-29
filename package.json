@@ -1,0 +1,17 @@
+{
+  "name": "aq-mock-dev",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "talk-app",
+    "package"
+  ],
+  "scripts": {
+    "install:all": "yarn install"
+  },
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "react-router-dom": "^7.4.1"
+  }
+}
+

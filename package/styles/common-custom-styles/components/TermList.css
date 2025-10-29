@@ -1,0 +1,30 @@
+@layer components {
+    .TermList {
+        @apply text-sm border-t border-grayscale-125;
+
+        & + .TermList {
+            @apply border-t-0;
+        }
+
+        .item {
+            @apply grid gap-6 items-center py-[14px] border-b border-grayscale-125;
+            grid-template-columns: 1fr auto;
+
+            .item--border-primary {
+                @apply border-primary;
+            }
+
+            .item--border-bold-primary {
+                @apply border-primary border-b-[2px];
+            }
+        }
+    }
+
+    .TermList--single {
+        @apply text-sm border-t-0 border-b-[2px] border-primary;
+
+        .item {
+            @apply pt-0 pb-5 border-b-0;
+        }
+    }
+}

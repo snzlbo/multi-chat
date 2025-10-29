@@ -1,0 +1,7 @@
+@layer components {
+    .BaseAppBar {
+        .app {
+            @apply max-w-[83px];
+        }
+    }
+}

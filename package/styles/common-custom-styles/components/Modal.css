@@ -1,0 +1,163 @@
+@layer components {
+    .Modal {
+        @apply fixed z-50 box-border flex items-start justify-center bg-grayscale-1000/30 backdrop-blur-default w-full min-h-[100lvh] h-[100lvh] top-0 left-0 overflow-auto box-border;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+
+        &:where(.scroll-locked *) {
+            padding-right: calc(0 + var(--scrollbar-width));
+        }
+
+        .inner {
+            @apply flex items-center justify-center relative w-full min-h-[100lvh] py-16 px-7;
+
+            &:where(.scroll-locked *) {
+                padding-right: calc(28px + var(--scrollbar-width));
+            }
+
+            .overlay {
+                @apply absolute z-0 w-full h-full top-0 left-0;
+            }
+        }
+
+        .content {
+            @apply relative z-10 bg-grayscale-0 rounded-2xl;
+            width: min(100%, 480px);
+            animation-duration: 600ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+            .close {
+                @apply absolute right-[10px] top-[10px] rounded-full duration-1200 ease-outExpo;
+                transition-property: background-color;
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-hoverColor duration-600;
+                    }
+                }
+            }
+
+            .label {
+                @apply flex items-center justify-center text-center text-lg text-grayscale-900 pt-10 px-14 pb-10;
+
+                &.label--empty {
+                    @apply pb-7;
+
+                    & + .message {
+                        @apply min-h-[76px];
+                    }
+                }
+            }
+
+            .title {
+                @apply p-4 border-b border-grayscale-125 text-center font-bold;
+            }
+
+            .message {
+                @apply text-center text-[15px] leading-[1.6] px-10 min-h-[36px] text-grayscale-900;
+
+                .notes {
+                    @apply text-[13px];
+                }
+            }
+
+            .control {
+                @apply pt-14 px-7 pb-10;
+
+                .attention {
+                    @apply flex items-center justify-center gap-1 text-[13px] mb-[14px];
+
+                    .shape {
+                        @apply w-[24px];
+
+                        svg {
+                            @apply w-full h-auto;
+                        }
+                    }
+                }
+
+                .buttons {
+                    @apply flex justify-center gap-2;
+                }
+            }
+
+            .children {
+                @apply p-[26px] px-14 pb-10;
+            }
+        }
+
+        .content--lg {
+            width: min(100%, 1024px);
+        }
+
+        .content--bottom-fix {
+            @apply rounded-b-none h-full;
+        }
+    }
+
+    .Modal--large {
+        .content {
+            @apply mx-auto;
+            width: min(100%, 800px);
+
+            .control {
+                @apply pb-0;
+            }
+        }
+    }
+
+    .Modal--onboarding {
+        .inner {
+            @apply py-7;
+        }
+    }
+
+    .Modal--open {
+        @apply opacity-0 invisible pointer-events-none;
+        animation-name: modalFadeIn;
+
+        > .inner {
+            > .content {
+                transform: scale(0.97);
+                animation-name: modalFadeIn--content;
+            }
+        }
+    }
+
+    .Modal--close {
+        animation-name: modalFadeOut;
+
+        .content {
+            animation-name: modalFadeOut--content;
+        }
+    }
+
+    @keyframes modalFadeIn {
+        to {
+            @apply opacity-100 visible pointer-events-auto;
+        }
+    }
+
+    @keyframes modalFadeIn--content {
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes modalFadeOut {
+        to {
+            @apply opacity-0 invisible pointer-events-none;
+        }
+    }
+
+    @keyframes modalFadeOut--content {
+        to {
+            transform: scale(0.97);
+        }
+    }
+}

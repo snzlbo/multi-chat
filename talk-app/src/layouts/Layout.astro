@@ -1,0 +1,33 @@
+---
+import "package/styles/common-custom-styles/index.css"
+import "package/styles/talk-custom-styles/index.css"
+import App from "@components/App";
+import { type StoresType } from '../store/store';
+import brandUrl from '@assets/images/brand.webp'
+import { TALK_URL } from "astro:env/client";
+
+interface Props { stores:StoresType }
+const {stores} = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>AIQQQ TALK</title>
+    <link
+      rel='icon'
+      type='image/x-icon'
+      href={`${TALK_URL}/Style%20Library/favicon.ico`}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Poppins:wght@400;500&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<App {...stores} client:only="react" />
+</body>
+</html>

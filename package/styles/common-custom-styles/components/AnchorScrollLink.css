@@ -1,0 +1,23 @@
+@layer components {
+    .AnchorScrollLink {
+        @apply flex items-center gap-[2px] duration-1200 ease-outExpo;
+        transition-property: opacity;
+
+        .label {
+            @apply font-bold tracking-[.05em];
+        }
+
+        .arrow {
+            svg {
+                @apply w-5 h-5;
+                transform: rotate(-90deg);
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply opacity-50 duration-600;
+            }
+        }
+    }
+}

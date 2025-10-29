@@ -1,0 +1,20 @@
+@layer components {
+    .Toggle {
+        @apply bg-grayscale-110 py-[2px] pl-[2px] pr-[22px] rounded-full outline-0 duration-600 ease-outExpo;
+        transition-property: background-color;
+
+        .switch {
+            @apply block bg-secondly w-[20px] h-[20px] rounded-full duration-600 ease-outExpo;
+            transition-property: transform;
+            box-shadow: 0 1px 3px rgba(10, 13, 18, 0.1);
+        }
+    }
+
+    .Toggle--on {
+        @apply bg-primary;
+
+        .switch {
+            transform: translate(100%, 0);
+        }
+    }
+}

@@ -1,0 +1,152 @@
+@layer components {
+    .PersonaTalkInput {
+        @apply sticky bottom-0 w-full h-0 duration-1800 ease-outExpo z-20;
+        transition-property: transform;
+        transform: translate(0, 0);
+
+        .clip {
+            @apply absolute bottom-[50%] left-0 w-full duration-1800 ease-outExpo;
+            transition-property: transform;
+            transform: translate(0, 0);
+        }
+
+        .inner {
+            @apply relative grid gap-[15px] max-w-[840px] box-content px-[14px] pb-6 mx-auto;
+            animation-name: persona-talk-start-slide;
+            animation-duration: 1200ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+            .label {
+                @apply text-[22px] font-medium text-center leading-[1.6] tracking-[0.02em] duration-1200 ease-outExpo;
+                transition-property: opacity, visibility;
+
+                &.label--hidden {
+                    @apply opacity-0 invisible;
+                }
+            }
+
+            .input {
+                @apply relative grid bg-secondly border border-grayscale-125 rounded-2xl pt-3 px-2 pb-2 z-10;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+                textarea {
+                    @apply px-[14px] py-[0];
+                }
+
+                .control {
+                    @apply flex items-center justify-end gap-2;
+
+                    .btn {
+                        @apply w-[36px] h-[36px] rounded-full bg-hoverColor duration-1200 ease-outExpo;
+
+                        svg {
+                            path {
+                                @apply duration-1200;
+                            }
+                        }
+
+                        @media (hover: hover) {
+                            &:hover {
+                                @apply bg-grayscale-100 duration-600;
+                            }
+                        }
+
+                        &:active {
+                            transform: scale(0.9);
+                        }
+
+                        &:disabled {
+                            @apply opacity-20 pointer-events-none;
+                        }
+                    }
+
+                    .btn--submit {
+                        @apply bg-primary;
+
+                        @media (hover: hover) {
+                            &:hover {
+                                @apply bg-quaternary duration-600;
+                                svg {
+                                    path {
+                                        @apply stroke-primary duration-600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .setting {
+                @apply relative flex items-center justify-end text-sm tracking-[0.05em] right-0 bottom-0 duration-1200 ease-outExpo z-0;
+
+                @media screen and (min-width: 1380px) {
+                    position: absolute;
+
+                    &.setting--started {
+                        transform: translate(100%, -150%);
+                    }
+
+                    &.setting--before-started {
+                        transform: translate(-14px, 10px);
+                    }
+                }
+
+                label {
+                    @apply flex items-center gap-[7px];
+
+                    .marker {
+                        @apply flex items-center justify-center w-[16px] h-[16px] border border-primary bg-secondly rounded-[5px];
+
+                        svg {
+                            @apply hidden;
+                        }
+                    }
+
+                    input[type='checkbox'] {
+                        @apply absolute w-0 h-0 invisible;
+
+                        &:checked {
+                            & + .marker {
+                                svg {
+                                    @apply block;
+                                }
+                            }
+                        }
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply cursor-pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .PersonaTalkInput-open {
+        animation-name: none;
+    }
+
+    .PersonaTalkInput--before-started {
+        @apply bottom-0;
+        transform: translate(0, -50svh);
+
+        .clip {
+            transform: translate(0, 50%);
+        }
+
+        &.PersonaTalkInput-open {
+            animation-name: persona-talk-message-start;
+            animation-duration: 1200ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            /*
+            animation-fill-mode: both;
+             */
+        }
+    }
+}

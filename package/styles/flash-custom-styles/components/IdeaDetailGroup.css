@@ -1,0 +1,84 @@
+@layer components {
+    .IdeaDetailGroup {
+        @apply relative min-w-0 w-auto -mx-7 pointer-events-none;
+
+        .carousel {
+            .swiper-wrapper {
+            }
+
+            .slide {
+                @apply flex items-center h-auto w-full max-w-[960px] pointer-events-auto;
+
+                .slide-inner {
+                    @apply w-full;
+                }
+            }
+        }
+
+        .navigation {
+            @apply absolute top-[50%] z-10;
+            transform: translate(0, -50%);
+
+            .btn {
+                @apply flex items-center justify-center w-[60px] h-[60px] bg-secondly pointer-events-auto rounded-full duration-600 ease-outExpo;
+                transition-property: opacity, transform, background-color;
+                box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+
+                svg {
+                    @apply w-7 h-7 pr-[3px] box-content;
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-grayscale-50;
+                    }
+                }
+
+                &:disabled {
+                    @apply opacity-0 pointer-events-none;
+                }
+
+                &:active {
+                    transform: scale(0.96);
+                }
+            }
+
+            &.navigation--next {
+                @apply right-7;
+                transform: translate(0, -50%) rotate(180deg);
+            }
+
+            &.navigation--prev {
+                @apply left-7;
+            }
+
+            @media screen and (min-width: 1210px) {
+                &.navigation--next {
+                    @apply right-[50%];
+                    transform: translate(580px, -50%) rotate(180deg);
+                }
+
+                &.navigation--prev {
+                    @apply left-[50%];
+                    transform: translate(-580px, -50%);
+                }
+            }
+
+            @media screen and (max-width: 1020px) {
+                .btn {
+                    @apply w-[52px] h-[52px];
+                }
+
+                &.navigation--next {
+                    @apply right-0;
+                    transform: translate(0, -50%) rotate(180deg);
+                }
+
+                &.navigation--prev {
+                    @apply left-0;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+}

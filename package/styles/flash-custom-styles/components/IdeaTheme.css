@@ -1,0 +1,25 @@
+@layer components {
+    .IdeaTheme {
+        @apply grid gap-[29px] border-primary border-t-[3px];
+        animation-name: fadeIn;
+        animation-duration: 2400ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+
+        .head {
+            @apply flex flex-wrap justify-between items-center pt-8 gap-4;
+
+            .name {
+                @apply font-bold text-[36px] tracking-[0.05em];
+            }
+
+            .Btn {
+                margin-left: auto;
+            }
+        }
+
+        .groups {
+            @apply grid gap-[33px];
+        }
+    }
+}

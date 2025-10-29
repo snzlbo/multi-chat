@@ -1,0 +1,25 @@
+{
+    "slide0": {
+        "heading": "Welcome",
+        "text": "AIQQQ TALK is an AI-powered persona system that instantly simulates target customers for interviews."
+    },
+    "slide1": {
+        "heading": "",
+        "text": "Enter a profile to generate a persona.<br />Engage in conversations with AI personas across different ages, interests, and backgrounds—helping you gain deeper customer insight."
+    },
+    "slide2": {
+        "heading": "",
+        "text": "Ideal for quick customer insights and idea testing.<br />Generated persona data can be exported and imported, making it easy to share across project teams."
+    },
+    "requireSlide": {
+        "heading": "Attention",
+        "texts": {
+            "heading1": "Entering personal information or sensitive data labeled as “Confidential” or “Highly Restricted” is prohibited.",
+            "text1": "Do not enter unpublished product names, client NDA-related information, or any other confidential data. <br />For details, please refer to the dJ AI Guidelines.",
+            "heading2": "Do not share your screen directly with external parties.",
+            "text2": "If you wish to use this service for workshops or consulting, please contact us. For more information, see Settings > FAQ.",
+            "heading3": "Make sure to download the generated results as needed.",
+            "text3": "Data will be lost if your browser cache is cleared. <br />Please download or copy the results as needed."
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "title": "設定",
+    "common": {
+        "edit": "編集",
+        "confirm": "確定",
+        "cancel": "キャンセル"
+    },
+    "language": {
+        "label": "言語",
+        "options": {
+            "fr": "Français",
+            "en": "English"
+        }
+    },
+    "deleteAllPersona": {
+        "title": "本当に削除しますか？",
+        "label": "ペルソナを全て削除する",
+        "text": "削除すると元に戻すことができません。 また、プリセットのペルソナは削除されません。 よろしいですか？",
+        "button": {
+            "label": "削除",
+            "no": "いいえ",
+            "confirm": "はい"
+        }
+    },
+    "faq": {
+        "label": "よくあるご質問",
+        "button": {
+            "label": "FAQ"
+        }
+    },
+    "expertMode": {
+        "label": "エキスパートモード",
+        "notes": "言語モデルの選択やプロンプトの書き換えができるモードです。"
+    },
+    "personaExtraction": {
+        "label": "ペルソナ抽出"
+    },
+    "defaultLanguageModel": {
+        "label": "デフォルト言語モデル"
+    },
+    "personaExtractionPrompt": {
+        "label": "ペルソナ抽出プロンプト",
+        "notes": "ファイルからペルソナを抽出するプロンプトを編集できます。"
+    },
+    "globalConversationPrompt": {
+        "label": "全体会話プロンプト",
+        "notes": "チャット画面での会話の答え方や口調をチューニングできます。"
+    },
+    "generateImage": {
+        "label": "画像生成"
+    },
+    "defaultImageGenerationModel": {
+        "label": "デフォルト画像生成モデル"
+    },
+    "profileImageGenerationPrompt": {
+        "label": "プロフィール画像生成プロンプト",
+        "notes": "プロフィール画像の印象や方向性をチューニングできます。"
+    },
+    "otherLinks": {
+        "label": "その他リンク"
+    },
+    "openAIQQQFLASH": {
+        "label": "AIQQQ FLASHを開く",
+        "notes": "AIQQQ FLASH（アイキュー フラッシュ）は、瞬時にアイデアを生成するAIブレストシステムです。",
+        "button": {
+            "label": "AIQQQ FLASH"
+        }
+    },
+    "logout": {
+        "title": "本当にログアウトしますか？",
+        "text": "Okta認証が必要な社内サービス（ESQ関連、Microsoftソフト等）から全てログアウトします。 よろしいですか？",
+        "button": {
+            "label": "ログアウト",
+            "no": "いいえ",
+            "confirm": "はい"
+        }
+    },
+    "expertModeOnModal": {
+        "label": "エキスパートモード",
+        "text": "パスワードを入力してください",
+        "notes": "パスワードの発行は事務局にお問い合わせください。<br />watabe.kazuhiro@dentsudigital.co.jp<br /> <br />メールの件名は以下の通り記載してください。<br />【AIQQQ TALK パスワード照会】"
+    },
+    "expertModeOffModal": {
+        "label": "エキスパートモードをOFFにする",
+        "text": "編集したプロンプトはデフォルトに戻ります。<br />よろしいですか？"
+    },
+    "editPrompts": {
+        "chat": {
+            "title": "グローバル会話プロンプトを編集"
+        },
+        "image": {
+            "title": "プロフィール画像生成プロンプトを編集"
+        },
+        "extract": {
+            "title": "ペルソナ抽出プロンプトを編集"
+        }
+    }
+}

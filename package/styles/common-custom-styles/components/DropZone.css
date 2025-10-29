@@ -1,0 +1,59 @@
+@layer components {
+    .DropZone {
+        @apply w-full bg-grayscale-50 border border-grayscale-110 rounded-lg;
+        grid-template-columns: 1fr 1fr;
+
+        .dropzone {
+            @apply flex items-center justify-center text-sm text-center min-h-[124px] rounded-lg duration-600 ease-outExpo;
+            transition-property: background-color;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-grayscale-75 cursor-pointer;
+                }
+            }
+        }
+
+        .display {
+            @apply grid items-center gap-[18px] min-h-[124px] w-full px-5 py-2;
+            grid-template-columns: 1fr 96px;
+
+            .item {
+                @apply grid items-center gap-[18px];
+
+                &:has(.thumbnail) {
+                    grid-template-columns: 80px auto;
+                }
+
+                .thumbnail {
+                    @apply w-20 h-20 object-cover;
+                }
+
+                .filename {
+                    @apply text-sm break-all text-left;
+                }
+            }
+
+            .reset {
+            }
+        }
+    }
+
+    .DropZone--secondly {
+        @apply bg-grayscale-100 border-0;
+
+        .dropzone {
+            @apply min-h-[96px];
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-grayscale-110 cursor-pointer;
+                }
+            }
+        }
+
+        .display {
+            @apply min-h-[96px];
+        }
+    }
+}

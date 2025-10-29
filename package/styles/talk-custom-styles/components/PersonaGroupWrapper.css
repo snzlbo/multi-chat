@@ -1,0 +1,13 @@
+@layer components {
+  .PersonaGroupWrapper {
+    @apply grid gap-16 pt-6;
+  }
+
+  .PersonaGroupWrapper--animating {
+    animation-name: fadeIn;
+    animation-duration: 900ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+}

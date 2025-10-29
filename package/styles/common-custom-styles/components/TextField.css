@@ -1,0 +1,16 @@
+@layer components {
+    .TextField {
+        @apply block bg-grayscale-50 border border-grayscale-125 rounded-lg text-[15px] tracking-[0.05em] w-full px-4 py-[11px] outline-0;
+
+        .text {
+            @apply leading-[1.35];
+        }
+
+        &.field--inputted {
+        }
+
+        &.field--empty {
+            @apply text-grayscale-400;
+        }
+    }
+}

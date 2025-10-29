@@ -1,0 +1,12 @@
+{
+    "enterGroupName": "Enter Group Name (Required)",
+    "matchedGroup": "Matched Groups",
+    "noMatchedGroup": "No matched groups found",
+    "setGroup": {
+        "other": "Other"
+    },
+    "filterGroup": {
+        "label": "Filter",
+        "currentGroups": "Displayed Groups"
+    }
+}

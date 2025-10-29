@@ -1,0 +1,24 @@
+{
+    "group": {
+        "label": "Group",
+        "setting": {
+            "filter": {
+                "label": "Filter"
+            },
+            "sort": {
+                "label": "Sort",
+                "asc": "Ascending",
+                "desc": "Descending"
+            }
+        }
+    },
+    "persona": {
+        "label": "Persona",
+        "setting": {
+            "multipleSelect": {
+                "label": "Multiple Select",
+                "exit": "Exit Selection Mode"
+            }
+        }
+    }
+}

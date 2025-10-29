@@ -1,0 +1,12 @@
+---
+import Layout from '@layouts/Layout.astro';
+import {type StoresType, homeOpened, language} from '@store/store';
+homeOpened.set(true);
+language.set('en')
+const Stores:StoresType = {
+    isHomeOpened: homeOpened.get(),
+    languageState: language.get()
+}
+---
+
+<Layout stores={Stores} />

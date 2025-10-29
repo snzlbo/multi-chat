@@ -1,0 +1,21 @@
+@layer components {
+    .KeywordChip {
+        @apply relative flex items-center bg-grayscale-50 text-sm pl-4 rounded-full gap-2 z-10;
+        animation-name: fadeIn;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+
+        .close {
+            @apply bg-grayscale-100/0 py-[5px] pr-4 pl-2 rounded-r-[20px] rounded-l-lg duration-600 ease-outExpo;
+            transition-property: background-color;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-grayscale-100;
+                }
+            }
+        }
+    }
+}

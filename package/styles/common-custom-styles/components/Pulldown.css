@@ -1,0 +1,79 @@
+@layer components {
+    .Pulldown {
+        @apply relative;
+
+        .toggle {
+        }
+
+        .display {
+            @apply py-2 px-4 min-w-[96px] text-sm text-center border border-grayscale-150 rounded-full;
+            transition-property: transform, background-color;
+        }
+
+        .btn {
+            @apply text-sm px-4 py-3 rounded-lg duration-1200 ease-outExpo;
+
+            &.btn--active {
+                @apply bg-hoverColor duration-600;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-hoverColor duration-600;
+                }
+            }
+
+            &:active {
+                transform: scale(0.96);
+            }
+        }
+
+        .cover {
+            @apply absolute top-[100%] right-0 opacity-0 px-[10px] pb-[15px] invisible rounded-2xl z-20 duration-600 ease-outExpo pointer-events-none;
+            transform: translate(10px, 0);
+        }
+
+        .options {
+            @apply flex flex-col min-w-[160px] max-w-[240px] bg-secondly rounded-2xl overflow-hidden;
+            transition-property: opacity, visibility;
+            transform: translate(0, 5px);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+            width: max-content;
+
+            .option {
+                @apply text-sm px-6 py-3 border-t border-grayscale-100 w-full text-left leading-[1.4] box-border duration-600 ease-outExpo;
+                transition-property: background-color;
+
+                &:first-child {
+                    @apply border-t-0;
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-grayscale-50;
+                    }
+                }
+
+                &.option--secondly {
+                    @apply bg-grayscale-100 border-primary;
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply bg-primary text-secondly;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+            }
+        }
+    }
+
+    .Pulldown--active {
+        .cover {
+            @apply opacity-100 visible pointer-events-auto;
+        }
+    }
+}

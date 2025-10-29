@@ -1,0 +1,38 @@
+@layer components {
+    .BaseAppBar {
+        @apply grid items-center bg-grayscale-0 px-[15px] py-[6px] gap-[10px];
+        grid-template-columns: 48px 1fr auto;
+        grid-template-areas: 'brand app navigation';
+
+        .brand {
+            grid-area: brand;
+        }
+
+        .app {
+            grid-area: app;
+
+            svg {
+                @apply w-full h-auto;
+            }
+        }
+
+        .navigation {
+            grid-area: navigation;
+
+            .btn {
+                @apply flex items-center justify-center rounded-full transition-colors duration-200 w-[40px];
+                aspect-ratio: 1/1;
+
+                svg {
+                    @apply fill-grayscale-850;
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-grayscale-50;
+                    }
+                }
+            }
+        }
+    }
+}

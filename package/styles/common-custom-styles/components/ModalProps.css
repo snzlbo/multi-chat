@@ -1,0 +1,63 @@
+@layer components {
+    .ModalProps--messageWithNotes {
+        @apply grid gap-6;
+    }
+
+    .ModalProps--toggleContents {
+        @apply grid gap-8;
+
+        .toggle-switch {
+            @apply grid max-w-[312px] w-full mx-auto;
+        }
+    }
+
+    .ModalProps--dropZone {
+        @apply grid gap-3;
+    }
+
+    .ModalProps--promptWithSettings {
+        @apply grid gap-4;
+
+        .setting-item {
+            @apply flex items-center justify-between;
+        }
+    }
+
+    .ModalProps--promptField {
+        @apply grid relative;
+
+        .reset {
+            @apply absolute bottom-4 right-4;
+        }
+    }
+
+    .ModalProps--promptFieldGroup {
+        @apply grid gap-5 text-[15px];
+
+        .prompt-label {
+            @apply mt-[2px];
+        }
+
+        .control {
+            @apply -mt-5;
+        }
+    }
+
+    .ModalProps--passwordField {
+        @apply grid gap-4;
+    }
+
+    .ModalProps--attention {
+        .head {
+            @apply grid gap-[10px] -mt-4;
+
+            .shape {
+                @apply w-[54px] mx-auto;
+            }
+        }
+
+        .texts {
+            @apply mt-10;
+        }
+    }
+}

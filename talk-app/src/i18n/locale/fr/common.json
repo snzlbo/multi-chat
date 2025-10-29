@@ -1,0 +1,5 @@
+{
+    "alert": {
+        "neverDisclosePrompts": "プロンプトは社外に開示・提供しないでください"
+    }
+}

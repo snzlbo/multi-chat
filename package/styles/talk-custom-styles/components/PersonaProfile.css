@@ -1,0 +1,103 @@
+@layer components {
+    .PersonaProfile {
+        @apply grid gap-8;
+
+        .image {
+            @apply relative bg-grayscale-100 overflow-hidden rounded-[20px];
+            aspect-ratio: 240/216;
+
+            img {
+                @apply block w-full h-full object-cover duration-600 ease-outExpo;
+                transition-property: opacity;
+            }
+
+            .dot {
+                @apply absolute top-[50%] left-[50%] opacity-0 pointer-events-none duration-600 ease-outExpo;
+                transition-property: opacity;
+                transform: translate(-50%, -50%);
+
+                svg {
+                    path {
+                        @apply fill-grayscale-300;
+                        animation-name: generateProse;
+                        animation-duration: 1200ms;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+
+                        &:nth-child(2) {
+                            animation-delay: 200ms;
+                        }
+
+                        &:nth-child(3) {
+                            animation-delay: 400ms;
+                        }
+                    }
+                }
+            }
+
+            &.image--generating {
+                img {
+                    @apply opacity-0;
+                }
+
+                .dot {
+                    @apply opacity-100;
+                }
+            }
+        }
+
+        .group {
+            @apply grid gap-2 text-sm;
+        }
+
+        .update {
+            @apply grid;
+
+            textarea,
+            input[type='text'] {
+                @apply block bg-grayscale-100 h-[32px] px-[10px] py-[5px] rounded-sm;
+
+                &:focus {
+                    @apply outline-[0px];
+                }
+            }
+
+            input[type='text'] {
+                @apply w-full;
+            }
+
+            &.update--name {
+                @apply grid gap-[10px];
+                grid-template-columns: 1fr 40px;
+            }
+
+            &.update--image {
+                @apply bg-secondly absolute right-[12px] bottom-[12px] rounded-full duration-1200 ease-outExpo;
+                transition-property: background-color, transform;
+                box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+
+                svg {
+                    path {
+                        @apply stroke-primary duration-1200 ease-outExpo;
+                    }
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-primary duration-600;
+
+                        svg {
+                            path {
+                                @apply stroke-secondly duration-600;
+                            }
+                        }
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.96);
+                }
+            }
+        }
+    }
+}

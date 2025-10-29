@@ -1,0 +1,34 @@
+@import 'components/common-components-modifier/BaseAppBar.css';
+@import 'components/common-components-modifier/Btn.css';
+@import 'components/common-components-modifier/Modal.css';
+@import 'components/common-components-modifier/OnboardingSlide.css';
+@import 'components/common-components-modifier/SuggestForm.css';
+
+@import 'components/Generator.css';
+@import 'components/Home.css';
+@import 'components/Idea.css';
+@import 'components/IdeaDetail.css';
+@import 'components/IdeaDetailGroup.css';
+@import 'components/IdeaGroup.css';
+@import 'components/IdeaTheme.css';
+@import 'components/KeywordChip.css';
+@import 'components/KeywordSelector.css';
+@import 'components/listSettings.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    @apply font-medium;
+    font-family: 'Zen Kaku Gothic New', serif;
+}
+
+body {
+    @apply relative;
+}
+
+main {
+    @apply mx-auto max-w-[1400px];
+}

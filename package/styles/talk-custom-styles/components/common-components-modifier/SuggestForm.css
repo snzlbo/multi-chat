@@ -1,0 +1,60 @@
+@layer components {
+    .SuggestForm {
+        &:where(.ListSettings .group-filter *) {
+            @apply relative;
+
+            .button {
+                &.button--focused {
+                    @apply w-[300px];
+
+                    .shift {
+                        @apply absolute w-full;
+                    }
+                }
+            }
+
+            .popup {
+                @apply absolute top-[-4px] left-auto -right-[100px] w-[400px];
+            }
+
+            @media screen and (max-width: 515px) {
+                .button {
+                    @apply max-w-[150px];
+
+                    &.button--focused {
+                    }
+                }
+
+                .popup {
+                    @apply right-auto w-[250px];
+                }
+            }
+        }
+
+        .popup {
+            input[type='text'].field {
+                //max-width: calc(100% - 30px);
+                @apply pr-[41px];
+            }
+
+            .delete {
+                @apply absolute top-[7px] right-[7px] rounded-full duration-600 ease-outExpo;
+                transition-property: background-color, opacity;
+
+                svg {
+                    @apply w-8 h-8;
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-hoverColor;
+                    }
+                }
+            }
+
+            .delete--hidden {
+                @apply opacity-0;
+            }
+        }
+    }
+}

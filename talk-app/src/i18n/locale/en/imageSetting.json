@@ -1,0 +1,18 @@
+{
+    "title": "Change Profile Picture",
+    "common": {
+        "confirm": "Confirm"
+    },
+    "regenerateMode": {
+        "label": "Regenerate",
+        "selectModel": {
+            "label": "Select Model"
+        },
+        "revert": "Revert to Default Prompt"
+    },
+    "fileMode": {
+        "label": "Upload Image",
+        "notes": "Format: JPG or PNG, up to {{size}} MB",
+        "exceededNotes": "The file size has exceeded the limit. Please upload a file of less than {{size}} MB."
+    }
+}

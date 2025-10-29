@@ -1,0 +1,89 @@
+@layer components {
+    .Faq {
+        @apply w-full border-b border-grayscale-125;
+
+        .question {
+            @apply grid gap-5 items-center w-full text-left px-[9px] py-[18px] duration-600 ease-outExpo;
+            grid-template-columns: auto 1fr auto;
+            transition-property: background-color;
+
+            .label {
+                @apply text-[21px] leading-[1.7] text-grayscale-600;
+            }
+
+            .text {
+                @apply flex items-center text-[15px] leading-[1.6] font-bold min-h-[36px];
+            }
+
+            .marker {
+                @apply relative ml-[38px] w-6 h-6;
+
+                &:before,
+                &:after {
+                    @apply block absolute left-[50%] top-[50%] w-[2px] h-5 bg-grayscale-950 rounded-[2px] duration-600 ease-outExpo;
+                    content: '';
+                    transition-property: transform;
+                }
+
+                &:before {
+                    transform: translate(-50%, -50%);
+                }
+
+                &:after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+
+                &.marker--open {
+                    &:before {
+                        transform: translate(-50%, -50%) scale(1, 0);
+                    }
+                }
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-hoverColor duration-600;
+                }
+            }
+        }
+
+        .answer {
+            @apply text-[15px] leading-[1.8] tracking-[0.03em] h-[0] overflow-hidden;
+
+            .content {
+                @apply pt-1 pb-7;
+
+                > *:first-child {
+                    @apply mt-0;
+                }
+
+                > *:last-child {
+                    @apply mb-0;
+                }
+
+                p {
+                    @apply my-4;
+                }
+
+                strong {
+                    @apply font-bold;
+                }
+
+                ul,
+                ol {
+                    @apply grid gap-1 my-4;
+                }
+
+                ul {
+                    li {
+                        @apply indent-[-1em] pl-[1em];
+
+                        &:before {
+                            content: '・';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

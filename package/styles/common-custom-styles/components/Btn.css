@@ -1,0 +1,172 @@
+@layer components {
+    .Btn {
+        @apply flex gap-1 items-center justify-center bg-primary text-secondly rounded-full transition-all duration-2400 ease-outExpo box-border h-[40px] min-w-[112px] text-sm leading-[1.4] py-[6px] px-5;
+
+        svg {
+            path {
+                @apply stroke-secondly transition duration-2400 ease-outExpo;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-quaternary text-primary duration-600;
+
+                svg {
+                    path {
+                        @apply stroke-primary duration-600;
+                    }
+                }
+            }
+        }
+
+        &:active {
+            @apply duration-200;
+            transform: scale(0.98);
+        }
+
+        &:disabled {
+            @apply duration-400 opacity-20 pointer-events-none;
+
+            svg {
+                path {
+                    @apply duration-400;
+                }
+            }
+        }
+
+        &:where(.Modal .control *) {
+            @apply min-w-[148px];
+        }
+    }
+
+    .Btn--full {
+        @apply w-full;
+    }
+
+    .Btn--sm {
+        @apply text-[13px] h-[32px] min-w-[96px];
+    }
+
+    .Btn--sm-full {
+        @apply text-[13px] h-[32px]　w-full;
+    }
+
+    .Btn--sm-icon {
+        @apply text-[13px] h-[32px]　min-w-[0] px-3;
+    }
+
+    .Btn--secondly {
+        @apply bg-secondly text-primary;
+
+        svg {
+            path {
+                @apply stroke-primary;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-primary text-secondly;
+
+                svg {
+                    path {
+                        @apply stroke-secondly;
+                    }
+                }
+            }
+        }
+    }
+
+    .Btn--tertiary {
+        @apply bg-tertiary text-primary;
+
+        svg {
+            path {
+                @apply stroke-primary;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-secondly text-primary;
+
+                svg {
+                    path {
+                        @apply stroke-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .Btn--quaternary {
+        @apply bg-quaternary text-primary;
+
+        svg {
+            path {
+                @apply stroke-primary;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-primary text-secondly;
+
+                svg {
+                    path {
+                        @apply stroke-secondly;
+                    }
+                }
+            }
+        }
+    }
+
+    .Btn--gray {
+        @apply bg-grayscale-100 text-primary duration-1200;
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-grayscale-125;
+            }
+        }
+    }
+
+    .Btn--transparent {
+        @apply bg-secondly/0 text-primary;
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-grayscale-50;
+            }
+        }
+    }
+
+    .Btn--border-gray {
+        @apply border border-grayscale-150;
+
+        @media (hover: hover) {
+            &:hover {
+                @apply border-grayscale-150/0;
+
+                &.Btn--transparent {
+                    @apply border border-grayscale-150;
+                }
+            }
+        }
+    }
+
+    .Btn--pulldown {
+        @apply bg-secondly text-primary border border-grayscale-150 duration-600 min-w-[96px];
+
+        &:active {
+            @apply duration-200;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-grayscale-50;
+            }
+        }
+    }
+}

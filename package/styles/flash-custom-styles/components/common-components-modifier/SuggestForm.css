@@ -1,0 +1,9 @@
+@layer components {
+    .SuggestForm {
+        &:where(.Generator .head *) {
+            .popup {
+                @apply bg-grayscale-50/[.93];
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@layer components {
+    .PersonaGroup {
+        @apply grid gap-7 mx-auto;
+        container-type: inline-size;
+        container-name: perosona-group;
+        width: min(100%, 1280px);
+
+        .label {
+            @apply font-poppins font-medium text-[8px] leading-[1.25] tracking-[0.02em];
+        }
+
+        .group {
+            @apply font-medium border-b-primary border-b-2 pb-2 text-[28px] tracking-[0.02em];
+
+            &.group--sm {
+                @apply text-lg;
+            }
+        }
+
+        .content {
+            @apply grid gap-4;
+            grid-template-columns: repeat(6, 1fr);
+
+            @container perosona-group (max-width: 1064px) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            @container perosona-group (max-width: 848px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @container perosona-group (max-width: 632px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @container perosona-group (max-width: 416px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}

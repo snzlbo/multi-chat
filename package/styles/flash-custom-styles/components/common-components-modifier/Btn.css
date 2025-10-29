@@ -1,0 +1,31 @@
+@layer components {
+    .Btn {
+        &:where(.IdeaDetail .layout .detail .copy .prompts *) {
+            /* IdeaDetail のプロンプトをコピーするボタン用の例外スタイル */
+            @apply relative;
+
+            .icon {
+                @apply absolute right-[14px] top-[50%];
+                transform: translate(0, -50%);
+
+                svg {
+                    path {
+                        @apply stroke-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .Btn--gray {
+        &:where(.KeywordSelector *) {
+            @apply bg-grayscale-50 text-primary;
+
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-grayscale-100;
+                }
+            }
+        }
+    }
+}

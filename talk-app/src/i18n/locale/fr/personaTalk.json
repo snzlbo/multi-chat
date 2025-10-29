@@ -1,0 +1,34 @@
+{
+    "input": {
+        "initialMessage": "トークを開始しましょう",
+        "placeholder": "質問してみてください",
+        "imageSizeExceeded": "ファイルサイズが上限を超えています。20 MB未満のファイルをアップロードしてください。"
+    },
+    "settings": {
+        "label": "会話設定",
+        "options": {
+            "history": {
+                "label": "会話履歴"
+            },
+            "delete": {
+                "label": "会話削除"
+            },
+            "individualPromptSetting": {
+                "label": "個別会話プロンプト設定"
+            }
+        }
+    },
+    "removeConfirmModal": {
+        "title": "本当に削除しますか？",
+        "text": "削除すると戻すことができません。<br />よろしいですか？",
+        "no": "いいえ",
+        "confirm": "はい"
+    },
+    "expertSettingModal": {
+        "title": "個別会話プロンプト編集",
+        "text": "チャット画面での会話の答え方や口調をチューニングできます。<br />現在開いているペルソナの会話プロンプトのみに影響します。",
+        "revert": "デフォルトプロンプトに戻す",
+        "cancel": "キャンセル",
+        "save": "保存"
+    }
+}

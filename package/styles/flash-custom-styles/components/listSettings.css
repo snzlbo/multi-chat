@@ -1,0 +1,9 @@
+@layer components {
+    .ListSettings {
+        @apply flex items-center justify-end gap-[18px];
+
+        .inner {
+            @apply relative flex items-center justify-end;
+        }
+    }
+}

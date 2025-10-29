@@ -1,0 +1,67 @@
+@layer components {
+    .PersonaDetailEditor {
+        @apply grid h-full;
+        grid-template-columns: minmax(auto, 368px) 1fr;
+        grid-template-areas: 'profile detail';
+
+        .profile {
+            @apply border-r border-grayscale-125;
+            grid-area: profile;
+            overscroll-behavior: contain;
+
+            .inner {
+                @apply sticky top-0 px-16 py-[58px] grid gap-[60px];
+
+                .title {
+                    @apply grid gap-1;
+
+                    .label {
+                        @apply font-poppins text-[43px] leading-[1];
+                    }
+                }
+            }
+        }
+
+        .detail {
+            @apply pt-[58px] pb-8 duration-600;
+            grid-area: detail;
+            transition-property: background-color;
+            padding-inline: max(7%, 32px);
+
+            &.edit {
+                @apply bg-grayscale-100;
+            }
+
+            .update {
+                textarea {
+                    @apply bg-grayscale-100/0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(auto, 280px) 1fr;
+
+            .profile {
+                @apply border-r-0 border-b;
+
+                .inner {
+                    padding-inline: max(15%, 32px);
+                }
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'profile'
+                'detail';
+
+            .profile {
+                .inner {
+                    padding-inline: max(7%, 32px);
+                }
+            }
+        }
+    }
+}

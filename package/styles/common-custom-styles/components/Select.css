@@ -1,0 +1,26 @@
+@layer components {
+    .Select {
+        @apply relative flex gap-[14px] items-center justify-between bg-secondly min-w-[120px] text-[13px] pl-[14px] pr-[11px] py-[7px] border border-grayscale-125 rounded-[6px] duration-1200 ease-outExpo;
+        transition-property: background-color;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+        .icon {
+            @apply block w-[20px] h-[20px];
+            transform: rotate(-90deg) translate(-1px, 0);
+
+            svg {
+                @apply w-full h-full;
+
+                path {
+                    @apply transition-all duration-600 stroke-primary;
+                }
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-hoverColor duration-600 cursor-pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "talk-app",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "prettier": "prettier --write . --config ../package/config/prettier.config.js"
+    },
+    "dependencies": {
+        "@google/genai": "^0.7.0",
+        "astro": "^5.2.6",
+        "uuidv4": "^6.2.13"
+    },
+    "devDependencies": {
+        "@astrojs/react": "^4.2.0",
+        "@astrojs/tailwind": "^6.0.0",
+        "@nanostores/react": "^0.8.4",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "@types/uuid": "^10.0.0",
+        "autoprefixer": "^10.4.20",
+        "gsap": "^3.13.0",
+        "i18next": "^25.0.1",
+        "nanostores": "^0.11.4",
+        "postcss": "^8.5.2",
+        "prettier": "^3.5.2",
+        "prettier-plugin-astro": "^0.14.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-dropzone": "^14.3.8",
+        "react-flip-toolkit": "^7.2.4",
+        "react-i18next": "^15.5.1",
+        "tailwindcss": "^3"
+    }
+}

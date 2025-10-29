@@ -1,0 +1,10 @@
+{
+    "common": {},
+    "group": {
+        "label": "Group"
+    },
+    "persona": {
+        "details": "View details",
+        "chat": "Chat"
+    }
+}

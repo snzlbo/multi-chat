@@ -1,0 +1,18 @@
+{
+    "title": "プロフィール写真変更",
+    "common": {
+        "confirm": "確定"
+    },
+    "regenerateMode": {
+        "label": "再生成",
+        "selectModel": {
+            "label": "モデル選択"
+        },
+        "revert": "デフォルトプロンプトに戻す"
+    },
+    "fileMode": {
+        "label": "画像アップロード",
+        "notes": "形式：jpgもしくはpng<br />サイズ：{{size}} MBまで",
+        "exceededNotes": "ファイルサイズが上限を超えています。{{size}} MB未満のファイルをアップロードしてください。"
+    }
+}

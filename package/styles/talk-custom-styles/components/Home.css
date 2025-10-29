@@ -1,0 +1,22 @@
+@layer components {
+    .Home {
+        @apply relative w-full bg-blueGray-50 pb-[80px];
+
+        &.open {
+            animation-name: fadeIn;
+            animation-duration: 600ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+        &.close {
+            @apply fixed overflow-hidden pointer-events-none;
+            animation-name: fadeOut;
+            animation-duration: 2400ms;
+            animation-timing-function: var(--easeOutExpo);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+    }
+}

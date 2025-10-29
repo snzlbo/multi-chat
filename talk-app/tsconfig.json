@@ -1,0 +1,16 @@
+{
+    "extends": "../package/config/tsconfig/mock.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@layouts/*": ["src/layouts/*"],
+            "@components/*": ["src/components/*"],
+            "@data/*": ["src/data/*"],
+            "@script/*": ["src/script/*"],
+            "@assets/*": ["src/assets/*"],
+            "@store/*": ["src/store/*"],
+            "@types/*": ["src/types/*"]
+        }
+    },
+    "exclude": ["dist"]
+}

@@ -1,0 +1,16 @@
+---
+import Layout from '@layouts/Layout.astro';
+import {type StoresType, BackfaceScrollingDisabled, homeOpened, onboardingOpened, showOptionalOnboarding} from '@store/store';
+BackfaceScrollingDisabled.set(true);
+homeOpened.set(true);
+onboardingOpened.set(true);
+showOptionalOnboarding.set(true)
+const Stores:StoresType = {
+    isBackfaceScrollingDisabled: BackfaceScrollingDisabled.get(),
+    isHomeOpened: homeOpened.get(),
+    isOnboardingOpened: onboardingOpened.get(),
+    isShowOptionalOnboarding: showOptionalOnboarding.get()
+}
+---
+
+<Layout stores={Stores} />

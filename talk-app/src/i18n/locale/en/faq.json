@@ -1,0 +1,112 @@
+{
+    "category1": {
+        "category": "About AIQQQ TALK",
+        "questions": {
+            "q1": {
+                "q": "What is AIQQQ TALK?",
+                "a": "AIQQQ TALK lets you create a persona by entering or uploading profile information, then chat with that persona. Conversations with characters defined by age, interests, income, location, and background help clarify customer needs, values, and behaviours."
+            },
+            "q2": {
+                "q": "Are there any restrictions on external use? ",
+                "a": "To ensure consistent quality and pricing, please contact <l>aiqqqstudio@dentsu.co.jp</l> if you plan to use the service for workshops or consulting."
+            },
+            "q3": {
+                "q": "What about pricing and plans?",
+                "a": "The service is currently intended for internal discussions and early-stage drafting, so only a free plan is available."
+            },
+            "q4": {
+                "q": "Are there any environment restrictions for using the service?",
+                "a": "AIQQQ TALK runs in modern browsers; use the latest Chrome, Firefox, Safari, or Edge for optimal performance."
+            },
+            "q5": {
+                "q": "Are there plans for future feature additions or updates?",
+                "a": "Yes, we plan to continue improving and adding features based on user feedback."
+            },
+            "q6": {
+                "q": "I no longer use the service and would like to delete my account.",
+                "a": "AIQQQ TALK operates on Dentsu-managed Microsoft SharePoint with ESQ accounts, so there is no concept of account deletion. You can bulk-delete personas and chats from the settings screen."
+            }
+        }
+    },
+    "category2": {
+        "category": "About Personas",
+        "questions": {
+            "q1": {
+                "q": "How are personas generated?",
+                "a": "Based on the profile information you enter or upload, the AI automatically generates personas. Personas are created from the specified attributes (age, interests, income level, residence, career, etc.) and designed for realistic conversations."
+            },
+            "q2": {
+                "q": "How are generated personas and conversation data stored?",
+                "a": "Generated personas and chats are viewable only on your computer. Because the data is cleared when your browser cache is removed, we recommend downloading important items as you go."
+            },
+            "q3": {
+                "q": "How do I download them?",
+                "a": "Switch to multi-select mode on the Persona list and select the personas you want. Click the “Export Personas” button at the bottom to save them as a JSON file."
+            },
+            "q4": {
+                "q": "Can I group multiple generated personas?",
+                "a": "Yes. Give the group a name to organise personas together."
+            },
+            "q5": {
+                "q": "Can I run a group interview with several personas in the same group?？",
+                "a": "Group-level conversations are not available yet; group interviews are planned for a future update."
+            }
+        }
+    },
+    "category3": {
+        "category": "About Expert Mode",
+        "questions": {
+            "q1": {
+                "q": "What is Expert Mode?",
+                "a": "Expert Mode lets you edit persona-generation, chat, and profile-image prompts. Turn it on if you want to customise prompts yourself. A password is required; request one by emailing <l>watabe.kazuhiro@dentsudigital.co.jp </l>"
+            },
+            "q2": {
+                "q": "Can prompts edited in Expert Mode be reverted?",
+                "a": "Yes. You can revert to default prompts anytime in the “Tune Idea Prompt” or “Tune Image Prompt” screens."
+            }
+        }
+    },
+    "category4": {
+        "category": "About Security",
+        "questions": {
+            "q1": {
+                "q": "What security measures are in place for the data?",
+                "a": "AIQQQ TALK applies rigorous safeguards to keep generated content from leaking. It runs on Dentsu-managed Microsoft SharePoint, and data is viewable only on your computer—deleted automatically when the browser cache is cleared."
+            },
+            "q2": {
+                "q": "Are there any precautions about the information I enter?",
+                "a": "For security and privacy reasons, please refrain from entering unreleased product information or personal data (confidential or personally identifiable information). Keep information public to avoid risks."
+            }
+        }
+    },
+    "category5": {
+        "category": "Troubleshooting",
+        "questions": {
+            "q1": {
+                "q": "How do I get support if I run into trouble?",
+                "a": "If you encounter any issues or have questions while using the service, please refer to the FAQ page or contact us by <l>email</l>"
+            },
+            "q2": {
+                "q": "My personas or chat data disappeared even though I did nothing.",
+                "a": "Data in AIQQQ TALK is stored only on your PC and is erased when the browser cache is cleared. Your cache may have been deleted."
+            },
+            "q3": {
+                "q": "Can I restore personas or chat data once deleted?",
+                "a": "Deleted personas or chat data cannot be restored. We recommend downloading and saving important data regularly."
+            }
+        }
+    },
+    "category6": {
+        "category": "TIPS",
+        "questions": {
+            "q1": {
+                "q": "What files should I upload when generating a persona?",
+                "a": "Files detailing hobbies, personality traits, and other profile elements are especially helpful. For in-house projects, marketing-target data such as People Profiler reports is also effective. Files must be in JPEG format."
+            },
+            "q2": {
+                "q": "How should I ask questions to get better answers?",
+                "a": "Depending on your goal, adding phrases like “Please answer honestly” to your question can elicit more persona-like responses. As in real interviews, thoughtful wording helps draw out richer answers."
+            }
+        }
+    }
+}

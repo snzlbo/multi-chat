@@ -1,0 +1,12 @@
+{
+    "title": "Advanced Extraction Settings",
+    "text": "Configure how data is extracted from uploaded files.",
+    "prompt": {
+        "label": "Prompt for Extraction"
+    },
+    "format": {
+        "label": "Extraction Format"
+    },
+    "cancel": "Cancel",
+    "save": "Save"
+}

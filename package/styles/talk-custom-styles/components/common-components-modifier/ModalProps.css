@@ -1,0 +1,53 @@
+@layer components {
+    .ModalProps--personaImport {
+        @apply grid gap-8;
+
+        .upload-step {
+            @apply grid gap-3;
+        }
+
+        .import-step {
+            @apply grid gap-10;
+
+            .top {
+                @apply grid gap-7;
+
+                .personas {
+                    @apply overflow-auto max-h-[319px];
+
+                    .list {
+                        @apply grid gap-3;
+
+                        .persona {
+                            @apply grid grid-cols-[48px,1fr] items-center gap-4 text-left;
+
+                            .thumbnail {
+                                @apply rounded-2xl overflow-hidden;
+
+                                img {
+                                    @apply scale-[1.5] origin-top;
+                                }
+                            }
+
+                            .texts {
+                                @apply grid gap-[2px];
+
+                                .name {
+                                    @apply text-sm whitespace-nowrap text-ellipsis overflow-hidden;
+                                }
+
+                                .other {
+                                    @apply text-[13px] whitespace-nowrap text-ellipsis overflow-hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                @apply grid gap-4;
+            }
+        }
+    }
+}

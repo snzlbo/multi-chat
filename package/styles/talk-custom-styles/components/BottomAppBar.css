@@ -1,0 +1,35 @@
+@layer components {
+    .BottomAppBar {
+        @apply fixed w-full ease-outExpo duration-600 bottom-0 left-0;
+        transition-property: transform;
+        container-type: inline-size;
+        container-name: bottom-app-bar;
+        transform: translate(0, 0);
+
+        .content {
+            @apply relative flex justify-center gap-4 px-7 py-5 bg-grayscale-125/60 backdrop-blur-default ease-outExpo duration-600;
+
+            .left {
+                @apply relative md:absolute md:right-7;
+            }
+
+            &.content--multiple {
+                @apply absolute w-full bottom-0 left-0 bg-grayscale-850/60;
+                transition-property: transform;
+            }
+
+            &.content--open {
+                transform: translate(0, 0);
+            }
+
+            &.content--close {
+                transform: translate(0, 100%);
+            }
+        }
+    }
+
+    .BottomAppBar--close {
+        @apply fixed w-full bottom-0 left-0 duration-1200;
+        transform: translate(0, 100%);
+    }
+}

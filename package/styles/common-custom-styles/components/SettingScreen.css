@@ -1,0 +1,58 @@
+@layer components {
+    .SettingScreen {
+        @apply relative h-full bg-grayscale-45 min-h-[100svh];
+
+        .inner {
+            @apply max-w-[856px] mx-auto pt-[70px] px-7 pb-10;
+
+            &.inner--md {
+                @apply max-w-[800px];
+            }
+
+            &.inner--full {
+                @apply max-w-[100%];
+            }
+
+            .title {
+                @apply text-lg font-bold pb-4 border-b border-grayscale-950;
+            }
+
+            .heading {
+                @apply text-sm font-bold pb-5 border-b border-primary;
+
+                &.heading--large {
+                    @apply text-base border-b-[2px];
+                }
+            }
+        }
+
+        .back {
+            @apply fixed top-6 left-6;
+
+            svg {
+                @apply w-10 h-10 p-1;
+            }
+        }
+
+        .close {
+            @apply fixed top-6 right-6;
+        }
+    }
+
+    .SettingScreen--open {
+        animation-name: fadeIn;
+        animation-duration: 600ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    .SettingScreen--close {
+        @apply fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden;
+        animation-name: fadeOut;
+        animation-duration: 400ms;
+        animation-timing-function: var(--easeOutExpo);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+}

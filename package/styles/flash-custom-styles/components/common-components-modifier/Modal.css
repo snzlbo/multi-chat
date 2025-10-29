@@ -1,0 +1,7 @@
+@layer components {
+    .Modal {
+        .inner--IdeaDetailGroup {
+            @apply py-7;
+        }
+    }
+}

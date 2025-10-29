@@ -1,0 +1,10 @@
+{
+    "common": {},
+    "group": {
+        "label": "グループ"
+    },
+    "persona": {
+        "details": "詳細",
+        "chat": "トークする"
+    }
+}

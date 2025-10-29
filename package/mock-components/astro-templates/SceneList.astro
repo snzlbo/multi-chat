@@ -1,0 +1,80 @@
+---
+import type {Scene} from "./Scene.type.ts";
+
+interface Props {
+    title:string,
+    scenes:Scene[],
+    scenes_en:Scene[]
+}
+const { title, scenes, scenes_en } = Astro.props;
+---
+
+<section>
+    <h1>{title}</h1>
+    <ul>
+        {scenes.map((scene) => (
+                <li>
+                    <p>{scene.id}</p>
+                    <a href={scene.url}>{scene.name}</a>
+                    <p>{scene.state}</p>
+                    {scene.description && <p>{scene.description}</p>}
+                </li>
+        ))}
+    </ul>
+</section>
+
+<section>
+    <h1>{title}（英語）</h1>
+    <ul>
+        {scenes_en.map((scene) => (
+                <li>
+                    <p>{scene.id}</p>
+                    <a href={scene.url}>{scene.name}</a>
+                    <p>{scene.state}</p>
+                    {scene.description && <p>{scene.description}</p>}
+                </li>
+        ))}
+    </ul>
+</section>
+
+<style>
+
+    body,html {
+        @apply bg-grayscale-0;
+    }
+
+    section {
+        @apply grid gap-10 p-10;
+    }
+
+    h1 {
+        @apply text-lg;
+    }
+
+    ul {
+        @apply rounded-lg overflow-hidden;
+
+        li {
+            @apply bg-grayscale-50 grid items-center gap-1 p-4 font-normal;
+            grid-template-columns: 50px 1fr 1fr 1fr;
+
+            &:nth-child(2n) {
+                @apply bg-grayscale-100;
+            }
+
+            p {
+                @apply text-sm;
+            }
+
+            a {
+                @apply underline transition-all duration-300;
+
+                @media (hover:hover ) {
+                    &:hover {
+                        @apply opacity-50;
+                    }
+                }
+            }
+        }
+    }
+</style>

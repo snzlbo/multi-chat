@@ -1,0 +1,59 @@
+@layer components {
+    .KeywordToggle {
+        @apply relative grid w-full p-1 bg-grayscale-100 rounded-lg;
+        grid-template-columns: 1fr 1fr;
+
+        &:after {
+            @apply block absolute top-1 left-1 w-full h-full duration-600 bg-secondly rounded-[6px] ease-outExpo z-0;
+            transition-property: transform;
+            content: '';
+            width: calc(50% - 4px);
+            height: calc(100% - 8px);
+        }
+
+        .option {
+            @apply relative flex items-center justify-center h-[32px] px-2 text-[15px] z-10 bg-secondly/0 rounded-[6px] duration-600 ease-outExpo;
+            transition-property: background-color;
+
+            &.option--false {
+                @media (hover: hover) {
+                    &:hover {
+                        @apply bg-hoverColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .KeywordToggle--true {
+        .option--true {
+            @apply pointer-events-none duration-0;
+        }
+
+        .option--false {
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-hoverColor;
+                }
+            }
+        }
+    }
+
+    .KeywordToggle--false {
+        &:after {
+            transform: translate(100%, 0);
+        }
+
+        .option--false {
+            @apply pointer-events-none duration-0;
+        }
+
+        .option--true {
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-hoverColor;
+                }
+            }
+        }
+    }
+}
