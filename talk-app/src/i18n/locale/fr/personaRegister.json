@@ -1,35 +1,35 @@
 {
-    "label": "新規ペルソナを作る",
-    "title": "ペルソナ生成",
+    "label": "Créer un nouveau persona",
+    "title": "Génération de persona",
     "common": {
-        "generate": "生成する",
-        "confirm": "確定する",
-        "back": "戻る"
+        "generate": "Générer",
+        "confirm": "Confirmer",
+        "back": "Retour"
     },
     "manualMode": {
-        "label": "手動入力",
-        "guide1": "ペルソナを規定する文章を入力して生成するを押してください。",
-        "guide2": "名前と属性を入力してください。<br />属性はその人となりがわかるような文章にするとあとで探しやすいです。またグループを設定することもできます。"
+        "label": "Saisie manuelle",
+        "guide1": "Veuillez entrer le texte définissant le persona et appuyer sur générer.",
+        "guide2": "Veuillez entrer le nom et les attributs. <br />Les attributs doivent être des phrases qui décrivent la personnalité pour faciliter la recherche plus tard. Vous pouvez également définir un groupe."
     },
     "fileMode": {
-        "label": "ファイルから入力",
-        "notes": "アップロードできるファイル形式：Jpeg (参照したい資料をJpeg画像化してください)",
-        "extract": "抽出する",
-        "expertSetting": "高度な抽出設定"
+        "label": "Saisie à partir d'un fichier",
+        "notes": "Formats de fichiers pouvant être téléchargés : Jpeg (veuillez convertir les documents que vous souhaitez référencer en images Jpeg)",
+        "extract": "Extraire",
+        "expertSetting": "Paramètres d'extraction avancés"
     },
     "personaDescription": {
-        "label": "ペルソナ説明文章：",
-        "notes": "文章は直接編集していただくことも可能です。"
+        "label": "Texte de description du persona :",
+        "notes": "Le texte peut également être édité directement."
     },
     "editConfirmModal": {
-        "title": "ペルソナ説明文章を変更しますか？",
-        "message": "変更すると、生成されたペルソナの<br />名前や画像、属性などが削除されます。",
-        "cancel": "キャンセル",
-        "change": "変更する"
+        "title": "Voulez-vous modifier le texte de description du persona ?",
+        "message": "Si vous modifiez, le<br />nom, l'image et les attributs du persona généré seront supprimés.",
+        "cancel": "Annuler",
+        "change": "Modifier"
     },
     "resetConfirmModal": {
-        "message": "現在のペルソナ説明文章や<br />プロフィール画像は削除されます。<br />よろしいですか？",
-        "no": "いいえ",
-        "yes": "はい"
+        "message": "Le texte de description actuel du persona et<br />l'image de profil seront supprimés.<br />Êtes-vous sûr ?",
+        "no": "Non",
+        "yes": "Oui"
     }
 }

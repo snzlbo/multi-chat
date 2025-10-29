@@ -1,72 +1,71 @@
-# aiqqq-sharepoint
+# CHATBOT MICRO-INTERVENTIONS FOR MENTAL WELL BEING
 
-このリポジトリは、複数アプリケーションを含む **モノレポ** 形式で構成されています。  
-Node.js および Yarn の特定バージョンを用いて開発する想定です。
+It is intended to be developed using specific versions of Node.js and Yarn.
 
-## 1. 環境構築
+## 1. Environment Setup
 
 ### Node.js
 
-- バージョン: **22.14.0**
+- **Version**: **22.14.0**
 - [Node Version Manager](https://github.com/nvm-sh/nvm)
 
 ### Yarn
 
-- バージョン: **4.6.0**
+- **Version**: **4.6.0**
 
+## 2. Project Structure
 
-## 2. プロジェクト構成
+This monorepo includes the following applications:
 
-このモノレポには以下のアプリケーションが含まれます:
 ```
-├─ flash-app/
-├─ flash-mock/
-├─ talk-app/
-└─ talk-mock/
+├─ package/
+└─ talk-app/
 ```
 
-それぞれのアプリで `yarn install` 後、ビルド・起動できます。  
-トップレベルにも `package.json` があり、Yarn Workspaces を利用しています。
+After running `yarn install` in each app, you can build and run it.
+There is also a `package.json` at the top level, which uses Yarn Workspaces.
 
-スタイルおよび汎用的に使用するReactコンポーネント等は以下のディレクトリで開発します。
+Styles and general-purpose React components are developed in the following directory:
+
 ```
 packages/
-├─ config/ ... tsconfig, prettier.config.js など汎用設定ファイルの格納場所。（適宜利用してください）
-├─ hooks ... FLASH、TALK共通で使用するフック
-├─ mock-component/ ... FLASH、TALK共通で使用するモック用Reactコンポーネント
-└─ styles/ ... tailwindcssの設定ファイルとカスタムスタイル
-``` 
+├─ config/ ... Location for general-purpose configuration files like tsconfig, prettier.config.js, etc. (Use as needed)
+├─ hooks ... Hooks
+├─ mock-component/ ... React components for mocks used TALK-APP
+└─ styles/ ... Tailwind CSS configuration files and custom styles
+```
 
+## 3. Mock Structure
 
-## 3. モックの構成
+### Overview
 
-### 概要
-- 目標
-  - デザイン・UI・UXを確認するためのマルチページの静的サイトを生成する。
-  - アプリケーション本体の実装メンバーへ、画面レイアウトやHTML構造・アニメーション等を提供する。
-- 利用技術:
-  - React … 各ページで使用するコンポーネント
-  - Astrojs … モックアップをマルチページの静的サイトとしてビルド
-  - nanostores … モックアップ内での状態管理に使用
+- **Goal**
+  - Generate a multi-page static site to review the design, UI, and UX.
+  - Provide screen layouts, HTML structure, animations, etc., to the implementation members of the main application.
+- **Technologies Used**:
+  - **React** … Components used on each page
+  - **Astrojs** … Builds the mockup as a multi-page static site
+  - **nanostores** … Used for state management within the mockup
 
-### ディレクトリ構成
+### Directory Structure
+
 ```
 /talk-mock(flash-mock)
 ├─ public/
-│   └─ ... (静的に配信するアセットを格納予定)
+│   └─ ... (For storing assets to be served statically)
 ├─ src/
-│   ├─ assets/        // メディアファイル (画像)
-│   ├─ components/    // Reactコンポーネント (.tsx)
-│   ├─ data/          // ダミーデータ、モックアップ画面一覧リスト
-│   ├─ layouts/       // Astroのレイアウトファイル
-│   ├─ pages/         // モックアップ画面。
-│   │   ├─ index.astro  // モックアップ画面一覧
-│   │   ├─ home/        // Home画面
-│   │   ├─ faq/         // FAQ画面
-│   │   ├─ setting/     // Setting画面
+│   ├─ assets/        // Media files (images)
+│   ├─ components/    // React components (.tsx)
+│   ├─ data/          // Dummy data, list of mockup screens
+│   ├─ layouts/       // Astro layout files
+│   ├─ pages/         // Mockup screens.
+│   │   ├─ index.astro  // List of mockup screens
+│   │   ├─ home/        // Home screen
+│   │   ├─ faq/         // FAQ screen
+│   │   ├─ setting/     // Setting screen
 │   │   └─ ...
-│   ├─ store/         // 状態管理（nanostoresを利用）
-│   └─ types/         // 汎用的に利用する型ファイル
+│   ├─ store/         // State management (using nanostores)
+│   └─ types/         // General-purpose type files
 ├─ package.json
 └─ ...
 ```

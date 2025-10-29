@@ -1,25 +1,25 @@
 {
     "slide0": {
-        "heading": "ようこそ",
-        "text": "AIQQQ TALK（アイキュー トーク）は、<br />瞬時に想定顧客を再現し、インタビューできる<br />AIペルソナシステムです。"
+        "heading": "Bienvenue",
+        "text": "AIQQQ TALK est un système de persona IA qui peut reproduire instantanément un client type et permettre de l'interviewer.<br />"
     },
     "slide1": {
         "heading": "",
-        "text": "プロフィール等を入力するとペルソナを生成。<br />さまざまな年代や興味関心、経歴などを備えた人格と<br />会話することで、より深い顧客理解が可能になります。"
+        "text": "En saisissant des informations telles que le profil, une persona est générée.<br />En conversant avec des personnalités présentant différents âges, centres d'intérêt et parcours,<br />vous pouvez obtenir une compréhension client plus approfondie."
     },
     "slide2": {
         "heading": "",
-        "text": "顧客ニーズの簡易調査や、アイデアの<br />簡易評価にご活用ください。生成したペルソナ情報は<br />エクスポート/インポートが可能なため、プロジェクト<br />メンバー間などで共有することができます。"
+        "text": "Utilisez-le pour des enquêtes rapides sur les besoins des clients ou pour une évaluation simplifiée des idées.<br />Les personas générés peuvent être exportés/importés, ce qui permet de les partager entre membres d'un projet,<br />etc."
     },
     "requireSlide": {
-        "heading": "重要",
+        "heading": "Important",
         "texts": {
-            "heading1": "個人情報や「極秘・取扱厳重注意」の情報は入力禁止です",
-            "text1": "未発表の商品名やクライアントのNDA事項などの極秘情報は入力してはいけません。詳しくはdJ AIガイドラインをご参照ください。",
-            "heading2": "社外に直接画面を見せないでください",
-            "text2": "ワークショップやコンサルティングで使用したい場合は<br />お問い合わせください。設定＞FAQをご確認ください。",
-            "heading3": "生成結果は随時ダウンロードしてください",
-            "text3": "ブラウザのキャッシュが消えるとデータも失われるため、<br />必要に応じてダウンロードやコピーをしてください。"
+            "heading1": "Ne saisissez pas d'informations personnelles ni d'informations « top secret / à manipulation strictement limitée »",
+            "text1": "N'entrez pas d'informations hautement confidentielles telles que des noms de produits non publiés ou des éléments couverts par des NDA clients. Pour plus de détails, consultez les directives dJ AI.",
+            "heading2": "Ne montrez pas l'écran à des personnes extérieures",
+            "text2": "Si vous souhaitez l'utiliser pour des ateliers ou des missions de conseil,<br />veuillez nous contacter. Consultez Paramètres > FAQ.",
+            "heading3": "Téléchargez régulièrement les résultats générés",
+            "text3": "Comme les données sont perdues si le cache du navigateur est supprimé,<br />téléchargez ou copiez-les si nécessaire."
         }
     }
 }

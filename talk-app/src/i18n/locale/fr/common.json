@@ -1,5 +1,5 @@
 {
     "alert": {
-        "neverDisclosePrompts": "プロンプトは社外に開示・提供しないでください"
+        "neverDisclosePrompts": "Veuillez ne pas divulguer ni transmettre les prompts en dehors de l'entreprise."
     }
 }

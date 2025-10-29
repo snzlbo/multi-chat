@@ -1,111 +1,111 @@
 {
     "category1": {
-        "category": "AIQQQ TALKについて",
+        "category": "À propos d'AIQQQ TALK",
         "questions": {
             "q1": {
-                "q": "AIQQQ TALKとはどのようなサービスですか？",
-                "a": "AIQQQ TALK（アイキュー トーク）は、ユーザーがプロフィール情報を入力またはアップロードすることで、ペルソナ（架空の人物像）を生成し、そのペルソナとチャット形式で対話できるAIサービスです。年齢、興味関心、経済状態、居住地、経歴などの詳細な属性を備えた人格と会話することで、顧客のニーズや価値観、行動パターンの具体化に役立てることが期待できます。"
+                "q": "Qu'est-ce qu'AIQQQ TALK ?",
+                "a": "AIQQQ TALK est un service d'IA qui génère des personas (profils fictifs) à partir des informations de profil que l'utilisateur saisit ou téléverse, et permet de dialoguer avec ces personas sous forme de chat. En conversant avec des personnalités disposant d'attributs détaillés (âge, centres d'intérêt, situation économique, lieu de résidence, parcours professionnel, etc.), on peut mieux concrétiser les besoins, les valeurs et les comportements des clients."
             },
             "q2": {
-                "q": "社外でも使いたい場合、社外提供の制約はありますか？",
-                "a": "品質と価格の一貫性を保つため、ワークショップやコンサルティングでの利用をご希望の場合は<l>aiqqqstudio@dentsu.co.jp </l>までお問い合わせください。"
+                "q": "Y a-t-il des restrictions si l'on souhaite l'utiliser en externe ?",
+                "a": "Pour garantir la cohérence de la qualité et des tarifs, si vous souhaitez utiliser le service dans le cadre d'ateliers ou de prestations destinées à des tiers, veuillez contacter <l>aiqqqstudio@dentsu.co.jp </l>."
             },
             "q3": {
-                "q": "利用料金やプランはどのようになっていますか？",
-                "a": "現時点では社内議論や草案の用途で使用するサービスのため、無料でご利用いただけるプランのみです。"
+                "q": "Qu'en est-il des tarifs et des offres ?",
+                "a": "À ce jour, le service est destiné à des usages internes, discussions et brouillons, et n'existe que sous une formule gratuite."
             },
             "q4": {
-                "q": "サービスの利用環境に制限はありますか？",
-                "a": "AIQQQ TALKは、最新のウェブブラウザ上で動作するウェブアプリケーションです。推奨ブラウザ（Chrome、Firefox、Safari、Edgeなど）の最新版をご利用いただくことで、最適なパフォーマンスが得られます。"
+                "q": "Y a-t-il des contraintes pour l'environnement d'utilisation ?",
+                "a": "AIQQQ TALK est une application web fonctionnant dans des navigateurs récents. Pour de meilleures performances, utilisez la dernière version des navigateurs recommandés (Chrome, Firefox, Safari, Edge, etc.)."
             },
             "q5": {
-                "q": "将来的な機能追加やアップデートは予定されていますか？",
-                "a": "はい、ユーザーのフィードバックをもとに、今後もサービスの改善・機能追加を予定しております。"
+                "q": "Des fonctionnalités ou mises à jour sont-elles prévues à l'avenir ?",
+                "a": "Oui. Nous prévoyons d'améliorer le service et d'ajouter des fonctionnalités à l'avenir en nous basant sur les retours des utilisateurs."
             },
             "q6": {
-                "q": "サービスを使わなくなったのでアカウントを削除したいです。",
-                "a": "AIQQQ TALKは電通管理のMicrosoft Sharepoint上で動作しており、アカウントはESQアカウントを用いています。そのため、AIQQQ TALKにはアカウント削除という概念がありません。生成したペルソナおよびトークの一括削除は設定画面から行えます。"
+                "q": "Je n'utilise plus le service et souhaite supprimer mon compte.",
+                "a": "AIQQQ TALK fonctionne sur Microsoft SharePoint géré par Dentsu et utilise des comptes ESQ. Par conséquent, il n'existe pas de notion de suppression de compte au sein d'AIQQQ TALK. Vous pouvez supprimer en masse les personas et les conversations générées depuis l'écran des paramètres."
             }
         }
     },
     "category2": {
-        "category": "ペルソナについて",
+        "category": "À propos des personas",
         "questions": {
             "q1": {
-                "q": "どのようにペルソナが生成されるのですか？",
-                "a": "ユーザーが入力またはアップロードしたプロフィール情報をもとに、AIが自動的にペルソナを生成します。ペルソナは、指定された属性（年齢、興味関心、経済状態、居住地、経歴など）に基づいて作成され、リアルな対話体験が可能となるよう設計されています。"
+                "q": "Comment les personas sont-ils générés ?",
+                "a": "L'IA génère automatiquement des personas à partir des informations de profil que l'utilisateur saisit ou téléverse. Les personas sont créés en fonction des attributs spécifiés (âge, centres d'intérêt, situation économique, lieu de résidence, parcours, etc.) afin de permettre une expérience de dialogue réaliste."
             },
             "q2": {
-                "q": "生成されたペルソナや会話のデータはどのように保存されますか？",
-                "a": "生成されたペルソナや会話のデータは、お使いの端末上でのみ閲覧可能な形で提供されます。また、ブラウザのキャッシュが消えるとともにデータも消去されるため、重要なデータは都度ダウンロードして保存いただくことを推奨しています。"
+                "q": "Comment les personas et les données de conversation sont-ils stockés ?",
+                "a": "Les personas et les données de conversation générées sont accessibles uniquement sur votre appareil. Comme elles sont supprimées lorsque le cache du navigateur est effacé, nous vous recommandons de télécharger et de sauvegarder régulièrement les données importantes."
             },
             "q3": {
-                "q": "ダウンロードの方法はどのようになりますか？",
-                "a": "まず、ペルソナ一覧画面で複数選択モードにしてペルソナを複数選択してください。画面下に「ペルソナをエクスポートする」ボタンが現れますので、クリックすることでJSONファイルとして保存できます。"
+                "q": "Comment effectuer le téléchargement ?",
+                "a": "Dans l'écran de la liste des personas, activez le mode de sélection multiple et sélectionnez plusieurs personas. Un bouton « Personaをエクスポートする » apparaîtra en bas de l'écran ; en cliquant dessus, vous pourrez enregistrer un fichier JSON."
             },
             "q4": {
-                "q": "生成した複数のペルソナをグループでまとめられますか？",
-                "a": "はい、任意のグループ名を付けることで、グループごとにまとめることができます。"
+                "q": "Peut-on regrouper plusieurs personas ?",
+                "a": "Oui. Vous pouvez affecter un nom de groupe arbitraire pour regrouper les personas."
             },
             "q5": {
-                "q": "グループでまとめた複数のペルソナでグループインタビューはできますか？",
-                "a": "現状、グループ単位での会話（グループインタビュー）はできません。将来的な追加機能として検討中です。"
+                "q": "Peut-on mener une interview de groupe avec des personas regroupés ?",
+                "a": "Actuellement, il n'est pas possible de mener des conversations par groupe (interview de groupe). Cette fonctionnalité est envisagée pour l'avenir."
             }
         }
     },
     "category3": {
-        "category": "エキスパートモードについて",
+        "category": "À propos du mode Expert",
         "questions": {
             "q1": {
-                "q": "エキスパートモードとは何ですか？",
-                "a": "エキスパートモードとは、ペルソナ生成プロンプトや会話プロンプト、プロフィール画像プロンプトの書き換えが可能になるモードです。ご自身でプロンプトを書き換えたい方はエキスパートモードをONにしてご利用ください。エキスパートモードの利用にはパスワードが必要です。パスワードは以下の事務局に「あなたの所属とお名前」を記載の上、利用用途を簡潔に記載の上メールをお送りください。<br /><br /><l>watabe.kazuhiro@dentsudigital.co.jp </l>"
+                "q": "Qu'est-ce que le mode Expert ?",
+                "a": "Le mode Expert permet de modifier les prompts de génération de persona, les prompts de conversation et les prompts d'image de profil. Si vous souhaitez modifier vous-même les prompts, activez le mode Expert. L'utilisation du mode Expert nécessite un mot de passe. Pour l'obtenir, envoyez un e‑mail au bureau ci‑dessous en indiquant votre affiliation et votre nom, ainsi qu'un bref descriptif de l'usage prévu. <br /><br /><l>watabe.kazuhiro@dentsudigital.co.jp </l>"
             },
             "q2": {
-                "q": "エキスパートモードで書き換えたプロンプトは元に戻せますか？",
-                "a": "はい。設定画面からデフォルトのプロンプトに戻せます。"
+                "q": "Peut-on revenir aux prompts par défaut après les avoir modifiés en mode Expert ?",
+                "a": "Oui. Vous pouvez restaurer les prompts par défaut depuis l'écran des paramètres."
             }
         }
     },
     "category4": {
-        "category": "セキュリティについて",
+        "category": "À propos de la sécurité",
         "questions": {
             "q1": {
-                "q": "データのセキュリティ対策はどのようになっていますか？",
-                "a": "AIQQQ TALKでは、生成された内容が外部に漏れることのないよう、セキュリティ対策を徹底しています。電通管理のMicrosoft Sharepoint上で動作しています。また、データはお使いの端末上でのみ閲覧可能となっており、ブラウザのキャッシュが消去されると同時にデータも削除される仕様です。"
+                "q": "Quelles mesures de sécurité sont en place pour les données ?",
+                "a": "AIQQQ TALK met en place des mesures de sécurité strictes pour éviter toute fuite de contenu généré. Il fonctionne sur Microsoft SharePoint géré par Dentsu. De plus, les données sont uniquement consultables sur votre appareil et sont supprimées lorsque le cache du navigateur est effacé."
             },
             "q2": {
-                "q": "入力する情報についての注意点はありますか？",
-                "a": "セキュリティとプライバシーの観点から、未発表の商品情報や個人を特定できる情報（機密情報、個人情報など）の入力は禁止しております。公開可能な情報にとどめていただくことで、リスクを回避できます。詳しくはdJ AIガイドラインをご参照ください。"
+                "q": "Y a-t-il des précautions concernant les informations saisies ?",
+                "a": "Pour des raisons de sécurité et de confidentialité, il est interdit de saisir des informations sur des produits non publiés ou des données permettant d'identifier une personne (informations confidentielles, données personnelles, etc.). En vous en tenant à des informations publiables, vous réduisez les risques. Pour plus de détails, consultez les directives dJ AI."
             }
         }
     },
     "category5": {
-        "category": "トラブル対応について",
+        "category": "Support en cas de problème",
         "questions": {
             "q1": {
-                "q": "何かトラブルが発生した場合のサポートはどのようになっていますか？",
-                "a": "不具合やご不明点がございましたら、<l>watabe.kazuhiro@dentsudigital.co.jp </l>までお問い合わせください。"
+                "q": "Quel support est prévu en cas de problème ?",
+                "a": "En cas de dysfonctionnement ou pour toute question, veuillez contacter <l>watabe.kazuhiro@dentsudigital.co.jp </l>."
             },
             "q2": {
-                "q": "何もしていないのに生成したペルソナや会話データが消えました。",
-                "a": "AIQQQ TALK上のデータはお使いの端末上でのみ閲覧可能となっており、ブラウザのキャッシュが消去されると同時にデータも削除される仕様です。キャッシュの削除が行われた可能性があります。"
+                "q": "Mes personas ou données de conversation ont disparu sans que je n'aie rien fait.",
+                "a": "Les données sur AIQQQ TALK sont visibles uniquement sur votre appareil et sont supprimées lorsque le cache du navigateur est effacé. Il est possible que le cache ait été supprimé."
             },
             "q3": {
-                "q": "一度削除したペルソナや会話データを元に戻せますか？",
-                "a": "一度削除したペルソナや会話データは復元できません。重要なデータは都度ダウンロードして保存いただくことを推奨しています。"
+                "q": "Peut-on restaurer des personas ou des conversations supprimés ?",
+                "a": "Les personas et les données de conversation supprimés ne peuvent pas être restaurés. Nous recommandons de télécharger et sauvegarder régulièrement les données importantes."
             }
         }
     },
     "category6": {
-        "category": "TIPS",
+        "category": "Conseils",
         "questions": {
             "q1": {
-                "q": "ペルソナ生成の際には、どのようなファイルをアップロードすればよいでしょうか？",
-                "a": "ペルソナ生成で特に効果的な情報は、人物像の要素となる趣味や性格傾向などが記載されたファイルを推奨しています。電通内にあるサービスの場合、People Plofilerなどのマーケティングターゲットに関する情報も有効です。ファイル形式はJpegが必須です。"
+                "q": "Quels fichiers faut-il téléverser pour générer des personas ?",
+                "a": "Pour la génération de personas, il est recommandé de fournir des fichiers contenant des éléments du profil (hobbies, traits de personnalité, etc.). Pour des services internes à Dentsu, des informations sur les cibles marketing (par exemple People Plofiler) peuvent être utiles. Le format de fichier requis est Jpeg."
             },
             "q2": {
-                "q": "どのように質問すると、良い回答が引き出せますか？",
-                "a": "利用目的にもよりますが、”本音で答えてください。”などを質問分の語尾につけるなどの工夫で、よりそのペルソナらしい答えを引き出すことが可能です。実際のインタビュー同様に、質問に工夫を加えることでより効果的な反応を引き出すことが期待できます。"
+                "q": "Comment formuler les questions pour obtenir de bonnes réponses ?",
+                "a": "Selon l'objectif, ajouter une phrase comme « Veuillez répondre honnêtement. » à la fin de la question peut encourager des réponses plus fidèles au persona. Comme pour une vraie interview, adapter et soigner la formulation des questions permet d'obtenir des réactions plus pertinentes."
             }
         }
     }

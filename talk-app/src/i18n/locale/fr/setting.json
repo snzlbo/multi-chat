@@ -1,98 +1,98 @@
 {
-    "title": "設定",
+    "title": "Paramètres",
     "common": {
-        "edit": "編集",
-        "confirm": "確定",
-        "cancel": "キャンセル"
+        "edit": "Modifier",
+        "confirm": "Confirmer",
+        "cancel": "Annuler"
     },
     "language": {
-        "label": "言語",
+        "label": "Langue",
         "options": {
             "fr": "Français",
             "en": "English"
         }
     },
     "deleteAllPersona": {
-        "title": "本当に削除しますか？",
-        "label": "ペルソナを全て削除する",
-        "text": "削除すると元に戻すことができません。 また、プリセットのペルソナは削除されません。 よろしいですか？",
+        "title": "Voulez-vous vraiment supprimer ?",
+        "label": "Supprimer toutes les personas",
+        "text": "La suppression est irréversible. Les personas présélectionnées ne seront pas supprimées. Voulez-vous continuer ?",
         "button": {
-            "label": "削除",
-            "no": "いいえ",
-            "confirm": "はい"
+            "label": "Supprimer",
+            "no": "Non",
+            "confirm": "Oui"
         }
     },
     "faq": {
-        "label": "よくあるご質問",
+        "label": "Questions fréquentes",
         "button": {
             "label": "FAQ"
         }
     },
     "expertMode": {
-        "label": "エキスパートモード",
-        "notes": "言語モデルの選択やプロンプトの書き換えができるモードです。"
+        "label": "Mode expert",
+        "notes": "Mode permettant de sélectionner le modèle linguistique et de modifier les prompts."
     },
     "personaExtraction": {
-        "label": "ペルソナ抽出"
+        "label": "Extraction de persona"
     },
     "defaultLanguageModel": {
-        "label": "デフォルト言語モデル"
+        "label": "Modèle linguistique par défaut"
     },
     "personaExtractionPrompt": {
-        "label": "ペルソナ抽出プロンプト",
-        "notes": "ファイルからペルソナを抽出するプロンプトを編集できます。"
+        "label": "Prompt d'extraction de persona",
+        "notes": "Permet d'éditer le prompt utilisé pour extraire les personas à partir d'un fichier."
     },
     "globalConversationPrompt": {
-        "label": "全体会話プロンプト",
-        "notes": "チャット画面での会話の答え方や口調をチューニングできます。"
+        "label": "Prompt de conversation globale",
+        "notes": "Permet d'ajuster la manière de répondre et le ton dans l'écran de chat."
     },
     "generateImage": {
-        "label": "画像生成"
+        "label": "Génération d'images"
     },
     "defaultImageGenerationModel": {
-        "label": "デフォルト画像生成モデル"
+        "label": "Modèle de génération d'images par défaut"
     },
     "profileImageGenerationPrompt": {
-        "label": "プロフィール画像生成プロンプト",
-        "notes": "プロフィール画像の印象や方向性をチューニングできます。"
+        "label": "Prompt de génération d'image de profil",
+        "notes": "Permet d'ajuster l'impression ou l'orientation de l'image de profil."
     },
     "otherLinks": {
-        "label": "その他リンク"
+        "label": "Autres liens"
     },
     "openAIQQQFLASH": {
-        "label": "AIQQQ FLASHを開く",
-        "notes": "AIQQQ FLASH（アイキュー フラッシュ）は、瞬時にアイデアを生成するAIブレストシステムです。",
+        "label": "Ouvrir AIQQQ FLASH",
+        "notes": "AIQQQ FLASH est un système de brainstorming IA qui génère instantanément des idées.",
         "button": {
             "label": "AIQQQ FLASH"
         }
     },
     "logout": {
-        "title": "本当にログアウトしますか？",
-        "text": "Okta認証が必要な社内サービス（ESQ関連、Microsoftソフト等）から全てログアウトします。 よろしいですか？",
+        "title": "Voulez-vous vraiment vous déconnecter ?",
+        "text": "Vous serez déconnecté de tous les services internes nécessitant une authentification Okta (liés à ESQ, logiciels Microsoft, etc.). Voulez-vous continuer ?",
         "button": {
-            "label": "ログアウト",
-            "no": "いいえ",
-            "confirm": "はい"
+            "label": "Se déconnecter",
+            "no": "Non",
+            "confirm": "Oui"
         }
     },
     "expertModeOnModal": {
-        "label": "エキスパートモード",
-        "text": "パスワードを入力してください",
-        "notes": "パスワードの発行は事務局にお問い合わせください。<br />watabe.kazuhiro@dentsudigital.co.jp<br /> <br />メールの件名は以下の通り記載してください。<br />【AIQQQ TALK パスワード照会】"
+        "label": "Mode expert",
+        "text": "Veuillez saisir le mot de passe",
+        "notes": "Pour obtenir un mot de passe, contactez le secrétariat.<br />watabe.kazuhiro@dentsudigital.co.jp<br /><br />Veuillez indiquer l'objet du courriel comme suit :<br />【Demande de mot de passe AIQQQ TALK】"
     },
     "expertModeOffModal": {
-        "label": "エキスパートモードをOFFにする",
-        "text": "編集したプロンプトはデフォルトに戻ります。<br />よろしいですか？"
+        "label": "Désactiver le mode expert",
+        "text": "Les prompts modifiés seront réinitialisés par défaut.<br />Voulez-vous continuer ?"
     },
     "editPrompts": {
         "chat": {
-            "title": "グローバル会話プロンプトを編集"
+            "title": "Modifier le prompt de conversation globale"
         },
         "image": {
-            "title": "プロフィール画像生成プロンプトを編集"
+            "title": "Modifier le prompt de génération d'image de profil"
         },
         "extract": {
-            "title": "ペルソナ抽出プロンプトを編集"
+            "title": "Modifier le prompt d'extraction de persona"
         }
     }
 }

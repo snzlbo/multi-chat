@@ -1,28 +1,28 @@
 {
-    "title": "ペルソナ詳細",
+    "title": "Détails du persona",
     "personaDescription": {
-        "label": "ペルソナ説明文章："
+        "label": "Description du persona :"
     },
-    "chat": "トークする",
-    "edit": "編集",
-    "duplicate": "複製",
+    "chat": "Discuter",
+    "edit": "Modifier",
+    "duplicate": "Dupliquer",
     "editMode": {
-        "back": "戻る",
-        "confirm": "確定する"
+        "back": "Retour",
+        "confirm": "Confirmer"
     },
     "duplicateMode": {
-        "back": "戻る",
-        "save": "複製を保存"
+        "back": "Retour",
+        "save": "Enregistrer la duplication"
     },
     "removeConfirmModal": {
-        "title": "本当に削除しますか？",
-        "text": "削除すると戻すことができません。<br />よろしいですか？",
-        "no": "いいえ",
-        "confirm": "はい"
+        "title": "Êtes-vous sûr de vouloir supprimer ?",
+        "text": "Une fois supprimé, il ne pourra pas être récupéré.<br />Êtes-vous sûr ?",
+        "no": "Non",
+        "confirm": "Oui"
     },
     "closeConfirmModal": {
-        "text": "編集した内容は保存されていませんが、<br />ここのまま閉じてよろしいですか？",
-        "no": "いいえ",
-        "close": "保存せず閉じる"
+        "text": "Les modifications apportées ne sont pas enregistrées, mais<br />pouvez-vous fermer cette fenêtre sans enregistrer ?",
+        "no": "Non",
+        "close": "Fermer sans enregistrer"
     }
 }

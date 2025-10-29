@@ -1,18 +1,18 @@
 {
-    "title": "プロフィール写真変更",
+    "title": "Modifier la photo de profil",
     "common": {
-        "confirm": "確定"
+        "confirm": "Confirmer"
     },
     "regenerateMode": {
-        "label": "再生成",
+        "label": "Régénérer",
         "selectModel": {
-            "label": "モデル選択"
+            "label": "Sélection du modèle"
         },
-        "revert": "デフォルトプロンプトに戻す"
+        "revert": "Revenir à l'invite par défaut"
     },
     "fileMode": {
-        "label": "画像アップロード",
-        "notes": "形式：jpgもしくはpng<br />サイズ：{{size}} MBまで",
-        "exceededNotes": "ファイルサイズが上限を超えています。{{size}} MB未満のファイルをアップロードしてください。"
+        "label": "Téléverser une image",
+        "notes": "Format : jpg ou png<br />Taille : jusqu'à {{size}} Mo",
+        "exceededNotes": "La taille du fichier dépasse la limite. Veuillez téléverser un fichier de moins de {{size}} Mo."
     }
 }

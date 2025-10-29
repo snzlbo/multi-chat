@@ -1,26 +1,26 @@
 {
     "common": {
-        "cancel": "キャンセル"
+        "cancel": "Annuler"
     },
     "exportPersona": {
-        "label": "ペルソナをエクスポートする",
-        "message": "選択した{{n}}人のペルソナをエクスポートします。",
-        "notes": "※エクスポートしたペルソナファイルは<br />ペルソナのインポートから読み込むことができます。",
-        "export": "エクスポート"
+        "label": "Exporter le persona",
+        "message": "Vous allez exporter les {{n}} personas sélectionnés.",
+        "notes": "※Le fichier de persona exporté peut être chargé depuis l'importation de persona.",
+        "export": "Exporter"
     },
     "setGroup": {
-        "label": "グループを設定する",
-        "createNewGroup": "新規グループをつくる",
-        "moveToGroup": "グループに移動する"
+        "label": "Définir un groupe",
+        "createNewGroup": "Créer un nouveau groupe",
+        "moveToGroup": "Déplacer vers le groupe"
     },
     "deletePersona": {
-        "label": "削除する",
-        "title": "ペルソナを削除する",
-        "message": "選択した{{n}}人のペルソナを削除します。<br />本当によろしいですか？",
-        "notes": "※削除したペルソナは復元できません。"
+        "label": "Supprimer",
+        "title": "Supprimer le persona",
+        "message": "Vous allez supprimer les {{n}} personas sélectionnés. Êtes-vous sûr ?",
+        "notes": "※Les personas supprimés ne peuvent pas être restaurés."
     },
     "deleteGroup": {
-        "label": "グループを削除する",
-        "message": "グループ内のペルソナが0人になる以下のペルソナグループは消滅します。本当によろしいですか？●●●●X(グループ名)"
+        "label": "Supprimer le groupe",
+        "message": "Le groupe de personas suivant, qui contiendra 0 personas, sera supprimé. Êtes-vous sûr ? ●●●●X (nom du groupe)"
     }
 }

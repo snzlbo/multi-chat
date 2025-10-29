@@ -1,12 +1,12 @@
 {
-    "title": "高度な抽出の設定",
-    "text": "アップロードされたファイルからの抽出の仕方を設定できます。",
+    "title": "Paramètres d'extraction avancés",
+    "text": "Vous pouvez configurer la manière d'extraire les données des fichiers téléchargés.",
     "prompt": {
-        "label": "抽出用のプロンプト"
+        "label": "Invite d'extraction"
     },
     "format": {
-        "label": "抽出フォーマット"
+        "label": "Format d'extraction"
     },
-    "cancel": "キャンセル",
-    "save": "保存"
+    "cancel": "Annuler",
+    "save": "Enregistrer"
 }

@@ -1,12 +1,12 @@
 {
-    "enterGroupName": "グループ名を入力(必須)",
-    "matchedGroup": "マッチしたグループ",
-    "noMatchedGroup": "マッチするグループはありません",
+    "enterGroupName": "Entrez le nom du groupe (obligatoire)",
+    "matchedGroup": "Groupe correspondant",
+    "noMatchedGroup": "Aucun groupe correspondant",
     "setGroup": {
-        "other": "その他"
+        "other": "Autre"
     },
     "filterGroup": {
-        "label": "絞込",
-        "currentGroups": "表示中のグループ"
+        "label": "Filtrer",
+        "currentGroups": "Groupes affichés"
     }
 }

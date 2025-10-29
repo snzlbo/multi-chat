@@ -1,34 +1,34 @@
 {
     "input": {
-        "initialMessage": "トークを開始しましょう",
-        "placeholder": "質問してみてください",
-        "imageSizeExceeded": "ファイルサイズが上限を超えています。20 MB未満のファイルをアップロードしてください。"
+        "initialMessage": "Commençons la conversation",
+        "placeholder": "Essayez de poser une question",
+        "imageSizeExceeded": "La taille du fichier dépasse la limite. Veuillez télécharger un fichier de moins de 20 Mo."
     },
     "settings": {
-        "label": "会話設定",
+        "label": "Paramètres de conversation",
         "options": {
             "history": {
-                "label": "会話履歴"
+                "label": "Historique de conversation"
             },
             "delete": {
-                "label": "会話削除"
+                "label": "Supprimer la conversation"
             },
             "individualPromptSetting": {
-                "label": "個別会話プロンプト設定"
+                "label": "Paramètres de prompt de conversation individuelle"
             }
         }
     },
     "removeConfirmModal": {
-        "title": "本当に削除しますか？",
-        "text": "削除すると戻すことができません。<br />よろしいですか？",
-        "no": "いいえ",
-        "confirm": "はい"
+        "title": "Voulez-vous vraiment supprimer ?",
+        "text": "Une fois supprimé, il ne sera pas possible de le récupérer. <br />Êtes-vous sûr ?",
+        "no": "Non",
+        "confirm": "Oui"
     },
     "expertSettingModal": {
-        "title": "個別会話プロンプト編集",
-        "text": "チャット画面での会話の答え方や口調をチューニングできます。<br />現在開いているペルソナの会話プロンプトのみに影響します。",
-        "revert": "デフォルトプロンプトに戻す",
-        "cancel": "キャンセル",
-        "save": "保存"
+        "title": "Édition du prompt de conversation individuelle",
+        "text": "Vous pouvez ajuster la façon de répondre et le ton dans la fenêtre de chat. <br />Cela n'affectera que le prompt de conversation de la persona actuellement ouverte.",
+        "revert": "Revenir au prompt par défaut",
+        "cancel": "Annuler",
+        "save": "Enregistrer"
     }
 }
