@@ -34,38 +34,13 @@ const PersonaTalkSettings = ({
         >
             <button
                 className={`btn ${isFocused ? 'btn--active' : ''}`}
-                onClick={() => setIsFocused(!isFocused)}
+                onClick={() => {
+                    setIsLogListOpen(true)
+                    setIsFocused(false)
+                }}
             >
-                {t('personaTalk.settings.label')}
+                {t('personaTalk.settings.options.history.label')}
             </button>
-            <div className="cover">
-                <div className="options">
-                    <button
-                        className="option"
-                        onClick={() => {
-                            setIsLogListOpen(true)
-                            setIsFocused(false)
-                        }}
-                    >
-                        {t('personaTalk.settings.options.history.label')}
-                    </button>
-                    {isTalkStarted && (
-                        <button className="option" onClick={handleDelete}>
-                            {t('personaTalk.settings.options.delete.label')}
-                        </button>
-                    )}
-                    <button
-                        className="option"
-                        onClick={() => {
-                            setIsExpertSettingModalOpened(true)
-                        }}
-                    >
-                        {t(
-                            'personaTalk.settings.options.individualPromptSetting.label'
-                        )}
-                    </button>
-                </div>
-            </div>
         </div>
     )
 }

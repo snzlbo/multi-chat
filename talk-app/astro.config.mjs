@@ -26,22 +26,6 @@ export default defineConfig({
                 context: 'client',
                 access: 'public',
             }),
-            GEMINI_API_KEY: envField.string({
-                context: 'client',
-                access: 'public',
-            }),
-            FLASH_URL: envField.string({
-                context: 'client',
-                access: 'public',
-            }),
-            TALK_URL: envField.string({
-                context: 'client',
-                access: 'public',
-            }),
-            EXPERT_PASSWORD: envField.string({
-                context: 'client',
-                access: 'public',
-            }),
         },
     },
 })

@@ -1,4 +1,4 @@
-import { OPENAI_API_KEY, GEMINI_API_KEY } from 'astro:env/client'
+import { OPENAI_API_KEY } from 'astro:env/client'
 import {
     GoogleGenAI,
     PersonGeneration,
@@ -9,7 +9,7 @@ import type { ImageGenerationModelTypes } from '@types/Persona.types'
 
 export async function image2Text(imageSrc: string | Blob, prompt: string) {
     // Initialize the Google Gemini AI client with the provided API key
-    const apiKey = GEMINI_API_KEY
+    const apiKey = ''
     const ai = new GoogleGenAI({ apiKey: apiKey })
 
     // Upload the provided image to Gemini AI and obtain its URI and MIME type

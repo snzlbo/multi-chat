@@ -18,14 +18,12 @@ import Toggle from '../../../package/mock-components/Toggle'
 import DialogModal from '../../../package/mock-components/DialogModal'
 import { useCrossFadeOutSetting } from '../../../package/hooks/useCrossFadeOutSetting.ts'
 import { Trans, useTranslation } from 'react-i18next'
-import { EXPERT_PASSWORD } from 'astro:env/client'
 import { updateExpertMode, getExpertMode } from 'src/server/database/expert.ts'
 import type { UpdateExpertModeDto } from 'src/types/Expert.types.ts'
 import { defaultExpertModeValues } from 'src/types/Expert.types.ts'
 import { clearTable } from 'src/server/database/base'
 import LargeModal from '../../../package/mock-components/LargeModal'
 import AutoResizingTextarea from '../../../package/mock-components/AutoResizingTextarea'
-import { FLASH_URL, TALK_URL } from 'astro:env/client'
 import CautionShape from '../../../package/mock-components/shapes/CautionShape'
 
 const SettingScreen = ({ fetch }: { fetch: () => Promise<void> }) => {
@@ -92,7 +90,7 @@ const SettingScreen = ({ fetch }: { fetch: () => Promise<void> }) => {
 
     const toggleExpertMode = (toggle: boolean) => {
         if (toggle) {
-            if (expertModePassword === EXPERT_PASSWORD) {
+            if (expertModePassword === '') {
                 setIsExpertModeOnModalOpened(false)
                 exportMode.set(true)
                 handleUpdate({ is_enabled: true } as UpdateExpertModeDto)
@@ -152,7 +150,7 @@ const SettingScreen = ({ fetch }: { fetch: () => Promise<void> }) => {
     }
 
     const logout = () => {
-        window.location.href = `${TALK_URL}/_layouts/closeConnection.aspx?loginasanotheruser=true`
+        window.location.href = `/_layouts/closeConnection.aspx?loginasanotheruser=true`
     }
 
     useEffect(() => {
