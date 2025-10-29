@@ -4,13 +4,13 @@ import {
     onboardingOpened,
     showOptionalOnboarding,
 } from '@store/store.ts'
-import OnboardingSlide from 'package/mock-components/OnboardingSlide'
-import useAnimationClose from 'package/hooks/useAnimationClose.ts'
+import OnboardingSlide from '../../../package/mock-components/OnboardingSlide'
+import useAnimationClose from '../../../package/hooks/useAnimationClose.ts'
 import onboardingLogo from '@assets/images/onboarding/onboarding-logo.webp'
 import onboardingSlide1 from '@assets/images/onboarding/onboarding-slide_1.webp'
 import onboardingSlide2 from '@assets/images/onboarding/onboarding-slide_2.webp'
-import CautionShape from 'package/mock-components/shapes/CautionShape'
-import CrossShape from 'package/mock-components/shapes/CrossShape'
+import CautionShape from '../../../package/mock-components/shapes/CautionShape'
+import CrossShape from '../../../package/mock-components/shapes/CrossShape'
 import { Trans, useTranslation } from 'react-i18next'
 
 interface OnboardingProps {}

@@ -1,5 +1,5 @@
 import { multipleSelectMode, groupFilterWord, sortOrder } from '@store/store.ts'
-import Btn from 'package/mock-components/Btn'
+import Btn from '../../../package/mock-components/Btn'
 import { useStore } from '@nanostores/react'
 import { useEffect, useState } from 'react'
 import SuggestForm from '@components/ui/SuggestForm.tsx'

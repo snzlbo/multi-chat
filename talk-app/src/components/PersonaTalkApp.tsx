@@ -19,7 +19,7 @@ import { getPersonaById } from 'src/server/database/persona.ts'
 import { useStore } from '@nanostores/react'
 import type { MessageLog } from '../types/Message.type.ts'
 import type { PersonaTypes } from '../types/Persona.types.ts'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea'
+import AutoResizingTextarea from '../../../package/mock-components/AutoResizingTextarea'
 import PictureShape from '@components/shapes/PictureShape'
 import UpperArrowShape from '@components/shapes/UpperArrowShape'
 import ChatBalloonSelf from '@components/ui/ChatBalloonSelf'
@@ -28,7 +28,7 @@ import { answer } from 'src/server/utils/chatApi.ts'
 import type { Chatlog } from 'src/types/Chatlog.types.ts'
 import { useTranslation } from 'react-i18next'
 import { defaultExpertModeValues } from 'src/types/Expert.types.ts'
-import CrossShape from 'package/mock-components/shapes/CrossShape.tsx'
+import CrossShape from '../../../package/mock-components/shapes/CrossShape.tsx'
 
 interface PersonaTalkAppProp {
     isCloseAnimating: boolean

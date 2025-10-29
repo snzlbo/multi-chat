@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import LargeModal from 'package/mock-components/LargeModal.tsx'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea.tsx'
-import Btn from 'package/mock-components/Btn.tsx'
+import LargeModal from '../../../../package/mock-components/LargeModal.tsx'
+import AutoResizingTextarea from '../../../../package/mock-components/AutoResizingTextarea.tsx'
+import Btn from '../../../../package/mock-components/Btn.tsx'
 import { useTranslation } from 'react-i18next'
 import { useStore } from '@nanostores/react'
 import { currentExpertData } from '@store/store.ts'
-import useAnimationClose from 'package/hooks/useAnimationClose'
-import CautionShape from 'package/mock-components/shapes/CautionShape'
+import useAnimationClose from '../../../../package/hooks/useAnimationClose'
+import CautionShape from '../../../../package/mock-components/shapes/CautionShape'
 import type { CreatePersonaDto } from 'src/types/Persona.types'
 
 interface ExpertExtractPromptSettingProps {

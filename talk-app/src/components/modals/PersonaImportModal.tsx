@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import DialogModal from 'package/mock-components/DialogModal.tsx'
-import Btn from 'package/mock-components/Btn.tsx'
+import DialogModal from '../../../../package/mock-components/DialogModal.tsx'
+import Btn from '../../../../package/mock-components/Btn.tsx'
 import DropZone, {
     type UploadImageProps,
-} from 'package/mock-components/DropZone.tsx'
+} from '../../../../package/mock-components/DropZone.tsx'
 import SuggestForm from '@components/ui/SuggestForm.tsx'
 import type { CreatePersonaDto } from '../../types/Persona.types.ts'
 import { getPersonasFromFile } from 'src/server/database/logic.ts'

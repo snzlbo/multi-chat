@@ -1,5 +1,5 @@
 import React from 'react'
-import BaseAppBar from 'package/mock-components/BaseAppBar'
+import BaseAppBar from '../../../package/mock-components/BaseAppBar'
 import Logo from '@components/ui/Logo'
 import AppBarNavigation from '@components/AppBarNavigation'
 

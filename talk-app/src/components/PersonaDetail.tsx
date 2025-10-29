@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useStore } from '@nanostores/react'
-import useAnimationClose from 'package/hooks/useAnimationClose'
+import useAnimationClose from '../../../package/hooks/useAnimationClose'
 import {
     personaDetailOpened,
     personaTalkOpened,
@@ -10,14 +10,14 @@ import {
     currentPersonaId,
     currentGroups,
 } from '@store/store.ts'
-import Btn from 'package/mock-components/Btn'
-import DialogModal from 'package/mock-components/DialogModal'
-import LargeCrossShape from 'package/mock-components/shapes/LargeCrossShape'
-import TrashShape from 'package/mock-components/shapes/TrashShape'
+import Btn from '../../../package/mock-components/Btn'
+import DialogModal from '../../../package/mock-components/DialogModal'
+import LargeCrossShape from '../../../package/mock-components/shapes/LargeCrossShape'
+import TrashShape from '../../../package/mock-components/shapes/TrashShape'
 import PersonaDetailEditor from '@components/PersonaDetailEditor'
 import BalloonShape from '@components/shapes/BalloonShape'
 import type { CreatePersonaDto, PersonaTypes } from '../types/Persona.types.ts'
-import { useCrossFadeOutSetting } from 'package/hooks/useCrossFadeOutSetting.ts'
+import { useCrossFadeOutSetting } from '../../../package/hooks/useCrossFadeOutSetting.ts'
 import { getPersonaById, updatePersona } from 'src/server/database/persona.ts'
 import { Trans, useTranslation } from 'react-i18next'
 import { createSearchHistory } from 'src/server/database/searchHistory.ts'

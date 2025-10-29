@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useStore } from '@nanostores/react'
-import useAnimationClose from 'package/hooks/useAnimationClose'
+import useAnimationClose from '../../../package/hooks/useAnimationClose'
 import {
     bottomAppBarOpened,
     homeOpened,
@@ -11,22 +11,22 @@ import {
     currentExpertData,
     language,
 } from '@store/store.ts'
-import Btn from 'package/mock-components/Btn'
-import LargeCrossShape from 'package/mock-components/shapes/LargeCrossShape'
-import Select from 'package/mock-components/Select'
-import Toggle from 'package/mock-components/Toggle'
-import DialogModal from 'package/mock-components/DialogModal'
-import { useCrossFadeOutSetting } from 'package/hooks/useCrossFadeOutSetting.ts'
+import Btn from '../../../package/mock-components/Btn'
+import LargeCrossShape from '../../../package/mock-components/shapes/LargeCrossShape'
+import Select from '../../../package/mock-components/Select'
+import Toggle from '../../../package/mock-components/Toggle'
+import DialogModal from '../../../package/mock-components/DialogModal'
+import { useCrossFadeOutSetting } from '../../../package/hooks/useCrossFadeOutSetting.ts'
 import { Trans, useTranslation } from 'react-i18next'
 import { EXPERT_PASSWORD } from 'astro:env/client'
 import { updateExpertMode, getExpertMode } from 'src/server/database/expert.ts'
 import type { UpdateExpertModeDto } from 'src/types/Expert.types.ts'
 import { defaultExpertModeValues } from 'src/types/Expert.types.ts'
 import { clearTable } from 'src/server/database/base'
-import LargeModal from 'package/mock-components/LargeModal'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea'
+import LargeModal from '../../../package/mock-components/LargeModal'
+import AutoResizingTextarea from '../../../package/mock-components/AutoResizingTextarea'
 import { FLASH_URL, TALK_URL } from 'astro:env/client'
-import CautionShape from 'package/mock-components/shapes/CautionShape'
+import CautionShape from '../../../package/mock-components/shapes/CautionShape'
 
 const SettingScreen = ({ fetch }: { fetch: () => Promise<void> }) => {
     const { t, i18n } = useTranslation()

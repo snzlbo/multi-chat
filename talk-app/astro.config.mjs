@@ -2,6 +2,8 @@
 import { defineConfig, envField } from 'astro/config'
 import React from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
+import vercel from '@astrojs/vercel'
+import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
     integrations: [
@@ -13,7 +15,8 @@ export default defineConfig({
     devToolbar: {
         enabled: false,
     },
-    site: 'https://esq365.sharepoint.com/sites/dd-AIQQQ-TALK-dev/Style%20Library',
+    site: 'https://multi-chat-talk-app-git-main-snzlbos-projects.vercel.app/',
+    adapter: vercel(),
     build: {
         assetsPrefix:
             'https://esq365.sharepoint.com/sites/dd-AIQQQ-TALK-dev/Style%20Library',

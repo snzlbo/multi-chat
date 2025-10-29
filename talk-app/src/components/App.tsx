@@ -43,7 +43,7 @@ import PersonaRegister from '@components/PersonaRegister'
 import FaqScreen from '@components/FaqScreen'
 import SettingScreen from '@components/SettingScreen'
 import Onboarding from '@components/Onboarding'
-import { useBackfaceScrolling } from 'package/hooks/useBackfaceScrolling.ts'
+import { useBackfaceScrolling } from '../../../package/hooks/useBackfaceScrolling.ts'
 import {
     createGroup,
     deleteGroup,

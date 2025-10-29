@@ -4,7 +4,7 @@ import type {
     ImageGenerationModelTypes,
     PersonaTypes,
 } from '../types/Persona.types.ts'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea'
+import AutoResizingTextarea from '../../../package/mock-components/AutoResizingTextarea'
 import PersonaProfile from '@components/PersonaProfile'
 import ImageSettingModal from '@components/modals/ImageSettingModal'
 import { generateImage } from 'src/server/utils/imageApi.ts'

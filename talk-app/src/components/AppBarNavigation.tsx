@@ -5,7 +5,7 @@ import {
     settingOpened,
 } from '@store/store.ts'
 import { useStore } from '@nanostores/react'
-import SettingShape from 'package/mock-components/shapes/SettingShape'
+import SettingShape from '../../../package/mock-components/shapes/SettingShape'
 
 const AppBarNavigation = () => {
     const isSettingOpened = useStore(settingOpened)

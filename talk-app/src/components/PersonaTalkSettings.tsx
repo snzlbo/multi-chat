@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { talkStarted } from '@store/store.ts'
 import { useStore } from '@nanostores/react'
-import { useClickOutside } from 'package/hooks/useClickOutside.ts'
+import { useClickOutside } from '../../../package/hooks/useClickOutside.ts'
 import { useTranslation } from 'react-i18next'
 
 interface PersonaTalkSettingsProps {

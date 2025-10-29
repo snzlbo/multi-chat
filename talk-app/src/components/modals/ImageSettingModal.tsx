@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import DialogModal from 'package/mock-components/DialogModal.tsx'
-import Btn from 'package/mock-components/Btn.tsx'
+import DialogModal from '../../../../package/mock-components/DialogModal.tsx'
+import Btn from '../../../../package/mock-components/Btn.tsx'
 import DropZone, {
     type UploadImageProps,
-} from 'package/mock-components/DropZone.tsx'
-import KeywordToggle from 'package/mock-components/KeywordToggle.tsx'
-import Select from 'package/mock-components/Select.tsx'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea.tsx'
+} from '../../../../package/mock-components/DropZone.tsx'
+import KeywordToggle from '../../../../package/mock-components/KeywordToggle.tsx'
+import Select from '../../../../package/mock-components/Select.tsx'
+import AutoResizingTextarea from '../../../../package/mock-components/AutoResizingTextarea.tsx'
 import type {
     CreatePersonaDto,
     ImageGenerationModelTypes,

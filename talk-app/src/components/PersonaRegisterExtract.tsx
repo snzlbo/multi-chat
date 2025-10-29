@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react'
 import DropZone, {
     type UploadImageProps,
-} from 'package/mock-components/DropZone'
-import Btn from 'package/mock-components/Btn'
+} from '../../../package/mock-components/DropZone'
+import Btn from '../../../package/mock-components/Btn'
 import TripleArrowShape from '@components/shapes/TripleArrowShape'
 import { Trans, useTranslation } from 'react-i18next'
 import { useStore } from '@nanostores/react'

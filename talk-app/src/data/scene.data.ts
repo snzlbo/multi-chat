@@ -1,4 +1,4 @@
-import type { Scene } from 'package/mock-components/astro-templates/Scene.type.ts'
+import type { Scene } from '../../../package/mock-components/astro-templates/Scene.type.ts'
 
 export const Scenes: Scene[] = [
     {

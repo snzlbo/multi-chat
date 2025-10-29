@@ -6,8 +6,8 @@ import {
     currentPersonaId,
     selectedTalkLog,
 } from '@store/store.ts'
-import CrossShape from 'package/mock-components/shapes/CrossShape'
-import { useClickOutside } from 'package/hooks/useClickOutside.ts'
+import CrossShape from '../../../package/mock-components/shapes/CrossShape'
+import { useClickOutside } from '../../../package/hooks/useClickOutside.ts'
 import { getChatLogsByPersonaId } from 'src/server/database/chatlog.ts'
 import type { Chatlog, ChatlogCreatedAt } from '../types/Chatlog.types.ts'
 import { useTranslation } from 'react-i18next'

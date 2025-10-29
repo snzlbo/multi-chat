@@ -14,18 +14,18 @@ import {
 } from '@store/store.ts'
 import { useStore } from '@nanostores/react'
 import type { PersonaTypes } from '../types/Persona.types.ts'
-import useAnimationClose from 'package/hooks/useAnimationClose'
-import LargeCrossShape from 'package/mock-components/shapes/LargeCrossShape'
-import ArrowShape from 'package/mock-components/shapes/ArrowShape'
+import useAnimationClose from '../../../package/hooks/useAnimationClose'
+import LargeCrossShape from '../../../package/mock-components/shapes/LargeCrossShape'
+import ArrowShape from '../../../package/mock-components/shapes/ArrowShape'
 import PersonaTalkApp from '@components/PersonaTalkApp'
 import PersonaTalkSettings from '@components/PersonaTalkSettings'
 import PersonaTalkLogList from '@components/PersonaTalkLogList'
 import Background from '@assets/images/talk-background.webp'
-import DialogModal from 'package/mock-components/DialogModal'
-import Btn from 'package/mock-components/Btn'
-import LargeModal from 'package/mock-components/LargeModal'
-import AutoResizingTextarea from 'package/mock-components/AutoResizingTextarea'
-import { useCrossFadeOutSetting } from 'package/hooks/useCrossFadeOutSetting.ts'
+import DialogModal from '../../../package/mock-components/DialogModal'
+import Btn from '../../../package/mock-components/Btn'
+import LargeModal from '../../../package/mock-components/LargeModal'
+import AutoResizingTextarea from '../../../package/mock-components/AutoResizingTextarea'
+import { useCrossFadeOutSetting } from '../../../package/hooks/useCrossFadeOutSetting.ts'
 import { updatePersona } from 'src/server/database/persona.ts'
 
 import {
@@ -33,7 +33,7 @@ import {
     getChatLogsByConversationId,
 } from 'src/server/database/chatlog.ts'
 import { Trans, useTranslation } from 'react-i18next'
-import CautionShape from 'package/mock-components/shapes/CautionShape.tsx'
+import CautionShape from '../../../package/mock-components/shapes/CautionShape.tsx'
 import { getExpertMode } from 'src/server/database/expert.ts'
 
 interface PersonaTalkProps {

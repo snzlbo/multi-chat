@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/react'
-import useAnimationClose from 'package/hooks/useAnimationClose'
+import useAnimationClose from '../../../package/hooks/useAnimationClose'
 import {
     homePositionShift,
     bottomAppBarOpened,
@@ -8,11 +8,11 @@ import {
     faqOpened,
 } from '@store/store.ts'
 import React, { useRef } from 'react'
-import LargeCrossShape from 'package/mock-components/shapes/LargeCrossShape'
-import ArrowShape from 'package/mock-components/shapes/ArrowShape'
-import AnchorScrollLink from 'package/mock-components/AnchorScrollLink'
-import Faq from 'package/mock-components/Faq'
-import { useCrossFadeOutSetting } from 'package/hooks/useCrossFadeOutSetting.ts'
+import LargeCrossShape from '../../../package/mock-components/shapes/LargeCrossShape'
+import ArrowShape from '../../../package/mock-components/shapes/ArrowShape'
+import AnchorScrollLink from '../../../package/mock-components/AnchorScrollLink'
+import Faq from '../../../package/mock-components/Faq'
+import { useCrossFadeOutSetting } from '../../../package/hooks/useCrossFadeOutSetting.ts'
 import { Trans, useTranslation } from 'react-i18next'
 
 const faqScreen = () => {

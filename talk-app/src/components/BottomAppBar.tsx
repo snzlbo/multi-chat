@@ -9,12 +9,12 @@ import {
     selectedPersonaIds,
     currentGroups,
 } from '@store/store.ts'
-import Btn from 'package/mock-components/Btn'
+import Btn from '../../../package/mock-components/Btn'
 import PersonShape from '@components/shapes/PersonShape'
-import DownloadShape from 'package/mock-components/shapes/DownloadShape'
+import DownloadShape from '../../../package/mock-components/shapes/DownloadShape'
 import MultiPersonaShape from '@components/shapes/MultiPersonaShape'
 import { useEffect, useState } from 'react'
-import DialogModal from 'package/mock-components/DialogModal'
+import DialogModal from '../../../package/mock-components/DialogModal'
 import SuggestForm from '@components/ui/SuggestForm'
 import PersonaImportModal from '@components/modals/PersonaImportModal'
 import { exportPersonas } from 'src/server/database/logic.ts'

@@ -1,10 +1,10 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-import fr_dropZone from 'package/mock-components/locale/fr/dropZone.json'
-import en_dropZone from 'package/mock-components/locale/en/dropZone.json'
-import fr_onboardingSlide from 'package/mock-components/locale/fr/onboardingSlide.json'
-import en_onboardingSlide from 'package/mock-components/locale/en/onboardingSlide.json'
+import fr_dropZone from '../../../package/mock-components/locale/fr/dropZone.json'
+import en_dropZone from '../../../package/mock-components/locale/en/dropZone.json'
+import fr_onboardingSlide from '../../../package/mock-components/locale/fr/onboardingSlide.json'
+import en_onboardingSlide from '../../../package/mock-components/locale/en/onboardingSlide.json'
 
 import fr_common from './locale/fr/common.json'
 import en_common from './locale/en/common.json'
