@@ -156,7 +156,7 @@ const PersonaProfile = ({
                                     onChange={(value) => {
                                         if (setGroupName) {
                                             setGroupName(
-                                                value === '未設定'
+                                                value === 'Therapists'
                                                     ? null
                                                     : value
                                             )

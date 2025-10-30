@@ -217,7 +217,7 @@ const BottomAppBar = ({
                             <SuggestForm
                                 onChange={(value) => {
                                     setNewGroupName(
-                                        value === '未設定' ? null : value
+                                        value === 'Therapists' ? null : value
                                     )
                                     setNewGroup(value)
                                     const exist = groups
