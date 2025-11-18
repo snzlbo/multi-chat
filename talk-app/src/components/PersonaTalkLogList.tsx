@@ -37,7 +37,7 @@ const PersonaTalkLogList = ({
                 }
             })
         }
-    }, [personaId])
+    }, [personaId, isLogListOpen])
 
     useClickOutside(logListRef, isLogListOpen, () => setIsLogListOpen(false))
 

@@ -157,7 +157,7 @@ export const listPersonasByGroup = async (
         if (!groupMap[groupKey]) {
             groupMap[groupKey] = {
                 id: groupKey,
-                name: groupKey === 'ungrouped' ? 'Therapists' : '',
+                name: groupKey === 'ungrouped' ? 'Advisors' : '',
                 personaList: [],
                 created_at: '',
                 updated_at: '',

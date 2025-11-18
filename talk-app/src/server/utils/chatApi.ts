@@ -21,14 +21,7 @@ export const answer = async (
     // Construct the initial prompt using persona-specific chat prompt and details
     let prompt =
         persona?.chat_prompt +
-        `\n\n「指定名前」：\n${persona?.name}\n\n「指定情報」：\n${persona?.other_description}\n\n「与えられた情報」:\n${persona?.profile_description}`
-
-    // If persona-specific chat prompt is unavailable, fallback to expert mode chat prompt
-    if (!persona?.chat_prompt) {
-        prompt =
-            expertData?.chat_prompt +
-            `\n\n「指定名前」：\n${persona?.name}\n\n「指定情報」：\n${persona?.other_description}\n\n「与えられた情報」:\n${persona?.profile_description}`
-    }
+        `\n\n"Specified name":\n${persona?.name}\n\n"Specified Information":\n${persona?.other_description}\n\n"Given Information":\n${persona?.profile_description}`
 
     // Set the system prompt language based on the provided language parameter
     const systemPrompt =
@@ -89,7 +82,7 @@ export const answer = async (
     const apiKey = OPENAI_API_KEY
 
     // Send a streaming request to OpenAI's Chat Completion API with the constructed messages
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    const response = await fetch('http://localhost:8000/chat', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

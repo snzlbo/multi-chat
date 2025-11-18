@@ -14,7 +14,7 @@ interface PersonaGroupProps extends PersonaGroupTypes {
 
 const PersonaGroup = ({
     id = 'ungrouped',
-    name = 'Therapists',
+    name = 'Advisors',
     personaList,
     deletingIds = [],
     creatingIds = [],
@@ -30,7 +30,7 @@ const PersonaGroup = ({
     return (
         <section id={String(`group-${id}`)} className="PersonaGroup">
             <div className="grid gap-1">
-                <div className="label">Therapists</div>
+                <div className="label">Advisors</div>
                 <h1
                     className={`group ${isMultipleSelectMode ? 'group--sm' : ''}`}
                 >
